@@ -39,6 +39,12 @@ class APIServices
     }
   }
 
+  Future reservePin(String roomID, String pin) async
+  {
+    final DatabaseReference  db = FirebaseDatabase.instance.ref(get_UID()).child("rooms").child(roomID).child("pins");
+    await db.child(pin).set(true);
+  }
+
   Future addLight(String alias, String roomID, int pin) async
   {
     
@@ -62,6 +68,7 @@ class APIServices
           await db.update( {newUUID: {"alias" : alias}});
           await db.child(newUUID).child("led_status").set(0);
           await db.child(newUUID).child("pin").set(pin);
+          await reservePin(roomID, 'p' + pin.toString());
           break;
         }
       }
@@ -71,6 +78,8 @@ class APIServices
       newUUID = uuid.v1().toString();
       await db.update( {newUUID: {"alias" : alias}});
       await db.child(newUUID).child("led_status").set(0);
+      await db.child(newUUID).child("pin").set(pin);
+      await reservePin(roomID, 'p' + pin.toString());
     }
     
    
@@ -102,7 +111,6 @@ class APIServices
       final DatabaseReference db =  FirebaseDatabase.instance.ref(get_UID());
       final DatabaseEvent event = await db.once();
       final Map data = event.snapshot.value as Map;
-      print(data['alias']);
       String username = data['alias'].toString();
       return username;
   }
@@ -123,6 +131,14 @@ class APIServices
   {
     await FirebaseDatabase.instance.ref(get_UID()).child("rooms").child(roomID).child("lights").child(lightID).update({"alias":alias});
 
+  }
+
+  Future<Map> getReservedPins(String roomID) async
+  {
+    final DatabaseReference db =  FirebaseDatabase.instance.ref(get_UID()).child("rooms").child(roomID).child("pins");
+    final DatabaseEvent event = await db.once();
+    final Map data = event.snapshot.value as Map;
+    return data;
   }
 
 }

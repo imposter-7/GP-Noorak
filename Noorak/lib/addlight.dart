@@ -33,18 +33,30 @@ class _AddLight extends State<AddLight> {
     super.dispose();
   }
 
-  Future<String?> openDialog() {
+  Future<String?> openDialog() async {
     final TextEditingController controller = TextEditingController();
-
+    final Map reservedPins = await apiServices.getReservedPins(widget.roomID);
+    reservedPins.removeWhere((key, value) => value == true); 
+    if(reservedPins.isEmpty)
+    {
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Errooorrr!!")));
+      return null;
+    }
+    late int? dropDown;
     return showDialog<String>(
-    
     context: context, 
     builder: (context)=> AlertDialog(
       title: Text("New Light"),
-      content: TextField(
-        autofocus: true,
-        decoration: InputDecoration(hintText: AppLocalizations.of(context)!.enteralias ),
-        controller: controller,
+      content: Column(
+        children: [
+          TextField(
+            autofocus: true,
+            decoration: InputDecoration(hintText: AppLocalizations.of(context)!.enteralias ),
+            controller: controller,
+          ),
+        DropdownButtonFormField<int>(items: List.generate(reservedPins.length, (index) => DropdownMenuItem(child: Text(reservedPins.keys.toList()[index]), value: int.parse(reservedPins.keys.toList()[index].split('p').last))),
+         onChanged: (value) => dropDown = value)
+        ],
       ),
       
 
@@ -53,7 +65,7 @@ class _AddLight extends State<AddLight> {
           onPressed: () async{
                         // ignore: unnecessary_null_comparison
                         if(controller.text == null || controller.text.isEmpty) return;
-                        await apiServices.addLight(controller.text, widget.roomID, pin);
+                        await apiServices.addLight(controller.text, widget.roomID, dropDown!);
                         
                         Navigator.of(context).pop();
           },
