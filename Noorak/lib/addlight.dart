@@ -19,6 +19,8 @@ class AddLight extends StatefulWidget {
 
 class _AddLight extends State<AddLight> {
 
+  int pin=0;
+
   @override
   void initState(){
     super.initState();
@@ -44,13 +46,15 @@ class _AddLight extends State<AddLight> {
         decoration: InputDecoration(hintText: AppLocalizations.of(context)!.enteralias ),
         controller: controller,
       ),
+      
 
       actions: [
         TextButton(
-          onPressed: () {
+          onPressed: () async{
                         // ignore: unnecessary_null_comparison
                         if(controller.text == null || controller.text.isEmpty) return;
-                        apiServices.addLight(controller.text, widget.roomID);
+                        await apiServices.addLight(controller.text, widget.roomID, pin);
+                        
                         Navigator.of(context).pop();
           },
           child: Text(AppLocalizations.of(context)!.submit))
@@ -83,7 +87,8 @@ class _AddLight extends State<AddLight> {
         TextButton(
           onPressed: () async {
               if(controller.text == null || controller.text.isEmpty) return;
-              await FirebaseDatabase.instance.ref(apiServices.get_UID()).child("rooms").child(widget.roomID).child("lights").child(lightID).update({"alias":controller.text});
+              await apiServices.editLightAlias(widget.roomID, lightID, controller.text);
+
               Navigator.of(context).pop();
           },
           child: Text(AppLocalizations.of(context)!.submit))

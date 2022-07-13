@@ -39,7 +39,7 @@ class APIServices
     }
   }
 
-  Future addLight(String alias, String roomID) async
+  Future addLight(String alias, String roomID, int pin) async
   {
     
 
@@ -61,6 +61,7 @@ class APIServices
         {
           await db.update( {newUUID: {"alias" : alias}});
           await db.child(newUUID).child("led_status").set(0);
+          await db.child(newUUID).child("pin").set(pin);
           break;
         }
       }
@@ -116,6 +117,12 @@ class APIServices
 
   void removeRoom(String roomID) async{
     await FirebaseDatabase.instance.ref(get_UID()).child("rooms").child(roomID).remove();
+  }
+
+  Future editLightAlias(String roomID, String lightID, String alias) async
+  {
+    await FirebaseDatabase.instance.ref(get_UID()).child("rooms").child(roomID).child("lights").child(lightID).update({"alias":alias});
+
   }
 
 }
