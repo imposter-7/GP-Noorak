@@ -97,7 +97,7 @@ class _Register extends State<Register> {
                 reverse: true,
                 child: Padding(
                   padding: EdgeInsets.fromLTRB(
-                      20, MediaQuery.of(context).size.height * 0.035, 20, 25),
+                      20, MediaQuery.of(context).size.height * 0.035, 20, 45),
                   child: Column(
                     children: <Widget>[
                       Text(
@@ -133,7 +133,7 @@ class _Register extends State<Register> {
                         ),
                       ),
                       SizedBox(
-                        height: 100,
+                        height: 120,
                       ),
 
                       //-----------Email Controller---------------
@@ -360,7 +360,7 @@ class _Register extends State<Register> {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Text(AppLocalizations.of(context)!.haveacc,
-            style: TextStyle(color: Color.fromARGB(179, 236, 222, 222))),
+            style: TextStyle(color: Color.fromARGB(212, 252, 244, 244))),
         GestureDetector(
           onTap: () {
             Navigator.push(

@@ -3,6 +3,7 @@
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_switch/flutter_switch.dart' show FlutterSwitch;
+import 'package:lastversion/classes/neon.dart';
 import 'package:lastversion/roomdetails.dart';
 import 'main.dart';
 import 'package:lastversion/provider/provider.dart';
@@ -212,40 +213,74 @@ class _RoomState extends State<Room> {
       height: 130,
       child: Stack(
         children: [
-          GestureDetector(
-            child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(15),
-                child: Image(
-                  image: AssetImage("images/2855009bf094635e8cb1d32c65b7c99b.png"),
-                  fit: BoxFit.cover,
-                  color:Colors.white,
-                  //colorBlendMode: BlendMode.darken,
-                  height: 120,
-                  width: double.infinity,
+          // Flexible(
+          //   child: 
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
+              child:
+              //  ClipRRect(
+              //   borderRadius: BorderRadius.circular(15),
+                
+              //   child: Image(
+              //     image: AssetImage("images/2855009bf094635e8cb1d32c65b7c99b.png"),
+              //     fit: BoxFit.cover,
+              //     color:Colors.white,
+              //     //colorBlendMode: BlendMode.darken,
+              //     height: 120,
+              //     width: double.infinity,
+              //   ),
+              // ),
+               CustomPaint(
+                  foregroundPainter: BorderPainter(),
+                  child: Container(
+                  width: 500,
+                  height: 100,
                 ),
               ),
             ),
-            onTap: () {
-              Navigator.push(
+          //   CustomPaint(
+          //   foregroundPainter: BorderPainter(),
+          //   child: Container(
+          //     width: 500,
+          //     height: 100,
+          //   ),
+          // ),
+            // onTap: () {
+            //   Navigator.push(
+            //     context,
+            //     MaterialPageRoute(
+            //         builder: (context) => RoomDetail(roomID: widget.roomID)),
+            //   );
+            // },
+          // ),
+          Row(
+            // padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+            children:[
+              
+              Padding(
+              padding: EdgeInsets.symmetric(horizontal: 30),
+              
+              child: GestureDetector(
+                child:
+              Text(
+              widget.title.toString().toUpperCase(),
+              style: const TextStyle(
+                  color: Colors.white,
+                  fontSize: 22,
+                  fontWeight: FontWeight.bold),
+            ),
+            onTap: (){
+                Navigator.push(
                 context,
                 MaterialPageRoute(
                     builder: (context) => RoomDetail(roomID: widget.roomID)),
               );
             },
-          ),
+              )
+               ),
+          // ),
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
-            child: Text(
-              widget.title.toString().toUpperCase(),
-              style: const TextStyle(
-                  color: Colors.white,
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold),
-            ),
-          ),
-          Padding(padding: EdgeInsets.only(left: 230,),
+          padding: EdgeInsets.only(left: 170,),
           child:
           FlutterSwitch(
             width: 75,
@@ -276,28 +311,38 @@ class _RoomState extends State<Room> {
             },
           ),
           ),
-            Row(
-              // padding: EdgeInsets.only(left: 10,top:70),
-              children: [
-                  IconButton(
-                  onPressed:()=>{
-                    apiServices.removeRoom(widget.roomID)
-                  }
-                   //print(widget.roomID),
-                  //  apiServices.removeFeature(widget.roomID,),
-                    ,icon:  Icon(Icons.delete_sharp,size:30,color: Color.fromARGB(255, 190, 59, 59),)
-              ),
-               IconButton(
-                icon:  Icon(Icons.edit,size:30,color: Color.fromARGB(255, 131, 126, 126),),
-                onPressed: ()async{
-                    edit_alias_openDialog(widget.roomID);
-                },
-              )
+            ]
+          ),
+            Padding(
+              padding: const EdgeInsets.only(left:283.0, top: 10.0),
+              child: Row(
+                // padding: EdgeInsets.only(left: 10,top:70),
+                children: [
+                   IconButton(
+                  icon:  Icon(
+                    Icons.edit,
+                    size:25,
+                    color: Color.fromARGB(255, 131, 126, 126),
+                  ),
+                  onPressed: ()async{
+                      edit_alias_openDialog(widget.roomID);
+                  },
+                ),
+                    IconButton(
+                    onPressed:()=>{
+                      apiServices.removeRoom(widget.roomID)
+                    }
+                     //print(widget.roomID),
+                    //  apiServices.removeFeature(widget.roomID,),
+                      ,icon:  Icon(Icons.delete_sharp,size:25,color: Color.fromARGB(255, 172, 48, 48),)
+                ),
+                
 
 
 
-                   ]
-                    ),
+                     ]
+                      ),
+            ),
              
                 
        /*          

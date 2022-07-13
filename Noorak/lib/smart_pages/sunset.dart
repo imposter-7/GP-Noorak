@@ -53,9 +53,9 @@ class _SunSet extends State<SunSet> {
   Widget build(BuildContext context) {
     return Scaffold(
       
-      backgroundColor: Color.fromARGB(255, 27, 27, 27),
+      backgroundColor: Colors.black,
       appBar: AppBar(
-        title: const Text("Home"),
+        title: const Text("Sunset"),
         centerTitle: true,
         backgroundColor: Colors.black,
       ),
@@ -110,7 +110,7 @@ class _SunSet extends State<SunSet> {
                padding: EdgeInsets.only(left: 10,top: 10),
                child: Text(
                 
-                "Turn on the switch at sunset",
+                "Switch on lights at sunset",
                 
                 style: TextStyle(
                   
@@ -122,7 +122,7 @@ class _SunSet extends State<SunSet> {
          
        
              const Text(
-              "Sunrise is at :  7:46 pm ",
+              "Sunset is at :  7:46 pm ",
               style: TextStyle(
                   fontSize: 20,
                   color: Colors.grey,

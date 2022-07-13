@@ -59,11 +59,13 @@ Future<String?> openDialog() {
 
     return Scaffold(
       
-      backgroundColor: Color.fromARGB(255, 27, 27, 27),
+      backgroundColor: Colors.black,
       appBar: AppBar(
         title: const Text("Home"),
         centerTitle: true,
         backgroundColor: Colors.black,
+      
+      
       ),
       body: 
       

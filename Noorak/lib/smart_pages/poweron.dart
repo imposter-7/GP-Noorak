@@ -10,7 +10,7 @@ class Poweron extends StatefulWidget {
 }
 
 class _Poweron extends State<Poweron> {
-  String _selectedTime = "Pick your time ";
+  String _selectedTime = "Pick a time ";
   List selectedRooms =[];
 
 Future<String?> openDialog() {
@@ -59,9 +59,9 @@ Future<String?> openDialog() {
 
     return Scaffold(
       
-      backgroundColor: Color.fromARGB(255, 27, 27, 27),
+      backgroundColor: Colors.black,
       appBar: AppBar(
-        title: const Text("MyHome"),
+        title: const Text("Power-on"),
         centerTitle: true,
         backgroundColor: Colors.black,
       ),
@@ -74,7 +74,7 @@ Future<String?> openDialog() {
           Padding(
             padding: EdgeInsets.only(left: 30, top: 21),
             child: Text(
-              "Notify me after:",
+              "Power-on at:",
               style: TextStyle(
                   fontSize: 20,
                   color: Colors.white,

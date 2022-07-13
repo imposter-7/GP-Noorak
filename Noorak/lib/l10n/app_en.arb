@@ -12,7 +12,7 @@
         "description": "A programmer greeting"
 
     },
-    "signemail" : "Sing in with Email",
+    "signemail" : "Sign in with Email",
     "@signemail" :{
         "description": "A programmer greeting"
 
@@ -22,29 +22,29 @@
         "description": "A programmer greeting"
 
     },
-"appleid" : "AppleId",
+"appleid" : "AppleID",
     "@appelid" :{
         "description": "A programmer greeting"
 
     },
-    "control" : "Control",
+    "control" : "Control from",
     "@control":
     {
         "description": "A programmer greeting"
 
     },
-    "anywhere" : "Anywhere",
+    "anywhere" : "anywhere",
     "@anywhere" : 
     {
         "description": "A programmer greeting"
 
     },
-    "by" : "By Continuing you agree to the Terms and Conditions",
+    "by" : "By continuing you agree to terms and conditions",
     "@by" : {
         "description": "A programmer greeting"
 
     },
-    "welcome": "Welcome",
+    "welcome": "Welcome !",
     "@welcome" : {
         "description": "A programmer greeting"
     },

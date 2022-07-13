@@ -51,9 +51,9 @@ Future<String?> openDialog() {
   Widget build(BuildContext context) {
     return Scaffold(
       
-      backgroundColor: Color.fromARGB(255, 27, 27, 27),
+      backgroundColor: Colors.black,
       appBar: AppBar(
-        title: const Text("MyHome"),
+        title: const Text("Sunrise"),
         centerTitle: true,
         backgroundColor: Colors.black,
       ),
@@ -112,7 +112,7 @@ Future<String?> openDialog() {
                padding: EdgeInsets.only(left: 10,top: 10),
                child: Text(
                 
-                "Turn off the switch at sunrise",
+                "Switch off lights at sunrise",
                 
                 style: TextStyle(
                   

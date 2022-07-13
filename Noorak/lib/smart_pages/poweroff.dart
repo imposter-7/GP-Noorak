@@ -11,7 +11,7 @@ class Poweroff extends StatefulWidget {
 
 
 class _Poweroff extends State<Poweroff> {
-  String _selectedTime = "Pick your time ";
+  String _selectedTime = "Pick a time ";
   List selectedRooms =[];
 
 
@@ -59,9 +59,9 @@ Future<String?> openDialog() {
 
     return Scaffold(
       
-      backgroundColor: Color.fromARGB(255, 27, 27, 27),
+      backgroundColor: Colors.black,
       appBar: AppBar(
-        title: const Text("MyHome"),
+        title: const Text("Power-off"),
         centerTitle: true,
         backgroundColor: Colors.black,
       ),
@@ -73,17 +73,27 @@ Future<String?> openDialog() {
           
           Padding(
             padding: EdgeInsets.only(left: 30, top: 21),
-            child: Text(
-              "Notify me after:",
-              style: TextStyle(
-                  fontSize: 20,
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold),
+            child: 
+            
+            Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+              ),
+
+            child:
+               Text(
+                "Power-off at:",
+                style: TextStyle(
+                    fontSize: 20,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold),
+                  
+              ),
             ),
           ),
           // SizedBox(height: 100),
           Padding(padding: EdgeInsets.only(top:50,left:160,right: 110),
-        child:  RawMaterialButton(
+          child:  RawMaterialButton(
               fillColor: Color.fromARGB(186, 232, 232, 232),
               child: Text(
                 _selectedTime,

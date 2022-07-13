@@ -80,7 +80,7 @@ extendBodyBehindAppBar:true,
           image: DecorationImage(
               image: AssetImage("images/0f3acc71f18597a61afe31e049795f73.jpg"),
               fit: BoxFit.cover,
-              colorFilter: ColorFilter.mode(Color.fromARGB(0, 167, 152, 152), BlendMode.lighten)),
+              colorFilter: ColorFilter.mode(Color.fromARGB(47, 120, 120, 120), BlendMode.lighten))
         ),
         child: Padding(
             padding: EdgeInsets.fromLTRB(
@@ -88,7 +88,7 @@ extendBodyBehindAppBar:true,
             child: Column(
               children: <Widget>[
                 SizedBox(
-                  height: 485,
+                  height: MediaQuery.of(context).size.height*0.7
                 )
                 ,ElevatedButton(
                 onPressed: () {
@@ -97,10 +97,11 @@ extendBodyBehindAppBar:true,
                 },
                 style: ElevatedButton.styleFrom(
                     minimumSize: Size(280, 45),
-                    primary: Color.fromARGB(255, 152, 22, 105).withOpacity(0.75),
+                    primary: Color.fromARGB(197, 174, 78, 132).withOpacity(0.75),
+                    
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20),),
-                  side: BorderSide(width:1,color:Color.fromARGB(255, 37, 28, 35).withOpacity(0.7),
+                  side: BorderSide(width:1,color:Color.fromARGB(255, 80, 67, 77).withOpacity(0.7),
                                                   
                  ),
  
@@ -143,76 +144,6 @@ extendBodyBehindAppBar:true,
             )
             )
 
-
-        // child: Stack(
-        //   children: [
-          // Column(
-          //     // ignore: prefer_const_literals_to_create_immutables
-          //     children: [
-          //       SizedBox(
-          //           height:108,
-          //           child: const Center(
-          //             // child: Text(
-          //             //   'NOORAK ',
-          //             //   style: TextStyle(
-          //             //     color: Colors.white,
-          //             //     fontSize: 35,
-          //             //     fontWeight: FontWeight.bold,
-          //             //   ),
-          //             // ),
-          //           )),
-          //     ],
-          //   ), 
-          //   Column(
-
-          //     // padding: EdgeInsets.only(left: 10, top: 520),
-          //     children: [
-          //       Center (
-                
-          //         child: ElevatedButton(
-          //       onPressed: () {
-          //         Navigator.of(context).push(
-          //             MaterialPageRoute(builder: (context) => Register()));
-          //       },
-          //       style: ElevatedButton.styleFrom(
-          //           minimumSize: Size(250, 40),
-          //           primary: Color.fromRGBO(173, 71, 131, 1),
-          //           shape: RoundedRectangleBorder(
-          //               borderRadius: BorderRadius.circular(20))),
-          //       child: Text(" Register",
-          //           style: TextStyle(
-          //               fontSize: 15, letterSpacing: 2, color: Colors.white)),
-          //       /*  */
-          //     )
-          //     ,),
-          //     ]
-          //   ),
-          //   Padding(
-          //     padding: EdgeInsets.all(55),
-          //     child: ElevatedButton(
-          //       onPressed: () {
-          //         Navigator.of(context)
-          //             .push(MaterialPageRoute(builder: (context) => Signin()));
-          //       },
-          //       style: ElevatedButton.styleFrom(
-          //           minimumSize: Size(250, 40),
-          //           primary: Color.fromARGB(255, 9, 4, 19),
-          //           shape: RoundedRectangleBorder(
-          //               borderRadius: BorderRadius.circular(20),),
-          //         side: BorderSide(width:1,color:Color.fromARGB(255, 185, 45, 155).withOpacity(1),
-                                                  
-          //        ),
- 
-          //       ),
-                        
-          //       child: Text(" Sign in",
-          //           style: TextStyle(
-          //               fontSize: 15, letterSpacing: 2, color: Colors.white)),
-          //       /*  */
-          //     ),
-          //   ),
-          // ],
-        // ),
       ),
     );
   }

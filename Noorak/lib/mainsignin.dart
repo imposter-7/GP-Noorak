@@ -84,27 +84,18 @@ class _Signin extends State<Signin> {
             Column(
               // ignore: prefer_const_literals_to_create_immutables
               children: [
-                /* SizedBox(
-                    height: 150,
-                    child: const Center(
-                      child: Text(
-                        'NOORAK ',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 35,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    )), */
+              
                 SizedBox(
-                  height: 235,
+                  height: MediaQuery.of(context).size.height*0.29,
+                  width: MediaQuery.of(context).size.height
+                  // width: MediaQuery.of(context).size.width-100,
                 ),
-                Padding(padding: EdgeInsets.only(right:200),
+                Padding(padding: EdgeInsets.only(right:135),
                 child: Text(
                         AppLocalizations.of(context)!.control,
                         textAlign: TextAlign.center,
                         style: TextStyle(
-                          color: Colors.black,
+                          color: Color.fromARGB(255, 255, 255, 255),
                           fontSize: 35,
                           fontWeight: FontWeight.bold,
                           shadows: <Shadow>[
@@ -117,12 +108,12 @@ class _Signin extends State<Signin> {
                         ),
                       ),
                 ),
-                 Padding(padding: EdgeInsets.only(right:150),
+                 Padding(padding: EdgeInsets.only(right:170),
                 child: Text(
                            AppLocalizations.of(context)!.anywhere,
                         textAlign: TextAlign.center,
                         style: TextStyle(
-                          color: Colors.black,
+                          color: Color.fromARGB(255, 255, 255, 255),
                           fontSize: 38,
                           fontWeight: FontWeight.bold,
                           shadows: <Shadow>[
@@ -135,7 +126,10 @@ class _Signin extends State<Signin> {
                         ),
                       ),
                 ),
-          SizedBox(height: 136),
+          SizedBox(
+            height: MediaQuery.of(context).size.height*0.28,
+            
+            ),
                 Padding(
                     padding: EdgeInsets.only( left:1),
                     child: ElevatedButton(
