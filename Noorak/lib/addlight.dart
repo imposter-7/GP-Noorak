@@ -39,7 +39,7 @@ class _AddLight extends State<AddLight> {
     reservedPins.removeWhere((key, value) => value == true); 
     if(reservedPins.isEmpty)
     {
-      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Errooorrr!!")));
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("You have used all the pins! ")));
       return null;
     }
     late int? dropDown;
@@ -201,9 +201,12 @@ class _AddLight extends State<AddLight> {
                   children: [ 
                     Padding(padding: EdgeInsets.only(top: 140),
                    child: IconButton(
-                  onPressed:()=>
-                  // print(lightKeys[index]),
-                   apiServices.removeLight(widget.roomID, lightKeys[index].toString().toLowerCase()),
+                  onPressed:(){
+                    // print(lightKeys[index]),
+                    apiServices.removeLight(widget.roomID, lightKeys[index].toString().toLowerCase());
+                    
+                  }
+                  ,
                     icon:  Icon(Icons.delete_sharp,size:30,color: Color.fromARGB(255, 190, 59, 59),)
               ),
 

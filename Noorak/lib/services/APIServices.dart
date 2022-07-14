@@ -45,6 +45,12 @@ class APIServices
     await db.child(pin).set(true);
   }
 
+  Future unreservePin(String roomID, String pin) async
+  {
+    final DatabaseReference  db = FirebaseDatabase.instance.ref(get_UID()).child("rooms").child(roomID).child("pins");
+    await db.child("p"+pin).set(false);
+  }
+
   Future addLight(String alias, String roomID, int pin) async
   {
     
@@ -120,7 +126,12 @@ class APIServices
   }
 
   void removeLight(String roomID, String lightID) async{
-   await FirebaseDatabase.instance.ref(get_UID()).child("rooms").child(roomID).child("lights").child(lightID).remove();
+    DatabaseReference db = await FirebaseDatabase.instance.ref(get_UID()).child("rooms").child(roomID).child("lights").child(lightID);
+    final DatabaseEvent event = await db.once();
+    final Map data = event.snapshot.value as Map;
+    String pin = data['pin'].toString();
+    unreservePin(roomID, pin);
+    db.remove();
   }
 
   void removeRoom(String roomID) async{
