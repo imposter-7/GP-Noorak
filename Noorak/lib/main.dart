@@ -1,22 +1,9 @@
-// ignore_for_file: use_key_in_widget_constructors, library_private_types_in_public_api, prefer_const_literals_to_create_immutables, prefer_const_constructors, deprecated_member_use
-import 'package:firebase_database/firebase_database.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
-import 'package:lastversion/Home.dart';
-import 'package:lastversion/Smart.dart';
 import 'package:lastversion/mainpage.dart';
-import 'package:lastversion/notifications/notification_api.dart';
-import 'package:lastversion/profile.dart';
-import 'package:lastversion/realtime_db.dart';
-import 'package:lastversion/roomdetails.dart';
-import 'package:lastversion/notifications/notifications.dart';
 import 'package:lastversion/services/APIServices.dart';
-import 'package:lastversion/smart_pages/poweron.dart';
-import 'package:lastversion/smart_pages/sunset.dart';
-import 'package:lastversion/timer/test.dart';
-import 'package:lastversion/timer/timer.dart';
 import 'package:provider/provider.dart';
 import 'package:lastversion/l10n/l10n.dart';
 
@@ -34,12 +21,15 @@ final APIServices apiServices = APIServices();
 //   runApp(const MaterialApp(home: MainPage()));
 // }
 
-Future<void> main() async {
-  Future initialization(BuildContext? context) async {
-    await Future.delayed(Duration(seconds: 1));
-  }
+void main() async {
+  // Future initialization(BuildContext? context) async {
+  //   await Future.delayed(Duration(seconds: 1));
+  // }
+ WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
+  FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
+  // runApp(const MaterialApp(home: MainPage()));
 
-  FlutterNativeSplash.removeAfter(initialization);
+  FlutterNativeSplash.remove();
 
   WidgetsFlutterBinding.ensureInitialized();
   FirebaseApp firebaseApp = await Firebase.initializeApp();

@@ -207,7 +207,7 @@
 
 },
 
-"enteralias" : "Enater your light alias",
+"enteralias" : "Enter your light name",
 "@enteralias" : {
     "description": "A programmer greeting"
 
