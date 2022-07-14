@@ -231,172 +231,167 @@ class _RoomState extends State<Room> {
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
-      highlightColor: Colors.transparent,
-      hoverColor: Colors.transparent,
-      splashColor: Colors.transparent,
-      onTap: (){
-                  Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => RoomDetail(roomID: widget.roomID)),
-                );
-              },
-      child: Container(
-        width: double.infinity,
-        height: 100,
-        child: Center(
-          child: Stack(
-            children: [
-              // Flexible(
-              //   child: 
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
-                  child:
-                  //  ClipRRect(
-                  //   borderRadius: BorderRadius.circular(15),
+    return Center(
+      child: InkWell(
+        highlightColor: Colors.transparent,
+        hoverColor: Colors.transparent,
+        splashColor: Colors.transparent,
+        onTap: (){
+                    Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => RoomDetail(roomID: widget.roomID)),
+                  );
+                },
+        child: Container(
+          margin: EdgeInsets.symmetric(horizontal: 10),
+          padding: EdgeInsets.symmetric(vertical: 10),
+          width: double.infinity,
+          height: 100,
+          child: Center(
+            child:
                     
-                  //   child: Image(
-                  //     image: AssetImage("images/2855009bf094635e8cb1d32c65b7c99b.png"),
-                  //     fit: BoxFit.cover,
-                  //     color:Colors.white,
-                  //     //colorBlendMode: BlendMode.darken,
-                  //     height: 120,
-                  //     width: double.infinity,
-                  //   ),
-                  // ),
-                   CustomPaint(
-                      foregroundPainter: BorderPainter(),
-                      child: Container(
-                      padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
-                      width: double.infinity,
-                      height: 100,
-                    ),
-                  ),
-                ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children:[
-                  
-                  Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 30),
-                  
-                  child: GestureDetector(
-                    child: Row(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        FlutterSwitch(
-                      width: 75,
-                      height: 30,
-                      valueFontSize: 35.0,
-                      toggleSize: 50.0,
-                      value: _switchValue,
-                      borderRadius: 30.0,
-                      onToggle: (value) {
-                        final DatabaseReference db = FirebaseDatabase.instance
-                            .ref(apiServices.get_UID())
-                            .child("rooms")
-                            .child(widget.roomID)
-                            .child("lights");
-                  
-                        if (value == true) {
-                          get_lights(db, 1);
-                  
-                          // rooms_listener(db);
-                        } else {
-                          get_lights(db, 0);
-                        }
-                        setState(() {
-                          _switchValue = value;
-                        });
-                  
-                        widget.onToggle();
-                      },
-                    ),
-                    SizedBox(width: 10,),
-                       Text(
-                          widget.title.toString().toUpperCase().length > 9 ? widget.title.toString().toUpperCase().split('-')[0] : widget.title.toString().toUpperCase(),
-    
-                          style: const TextStyle(
-                              color: Colors.white,
-                              fontSize: 22,
-                              fontWeight: FontWeight.bold
-                              , shadows: [
-                              Shadow(
-                                color: Color.fromARGB(255, 75, 26, 86),
-                                blurRadius: 5,
-                              ),
-                              Shadow(
-                                color: Color.fromARGB(255, 75, 26, 86),
-                                blurRadius: 10,
-                              ),
-                              Shadow(
-                                color: Color.fromARGB(255, 75, 26, 86),
-                                blurRadius: 15,
-                              ),
-                            ]
-                              ),
-                                    
+                     CustomPaint(
+                        foregroundPainter: BorderPainter(),
+                        child: Container(
+                        padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+                        width: double.infinity,
+                        height: 100,
+                        child:  Row(
+                  // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  // crossAxisAlignment: CrossAxisAlignment.center,
+                  children:[
+                    
+                    Flexible(
+                      child: Padding(
+                      padding: EdgeInsets.only(left: 10),
+                      
+                      child: GestureDetector(
+                        child: Row(
+                          // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          // crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            FlutterSwitch(
+                          width: 75,
+                          height: 30,
+                          valueFontSize: 35.0,
+                          toggleSize: 50.0,
+                          value: _switchValue,
+                          borderRadius: 30.0,
+                          onToggle: (value) {
+                            final DatabaseReference db = FirebaseDatabase.instance
+                                .ref(apiServices.get_UID())
+                                .child("rooms")
+                                .child(widget.roomID)
+                                .child("lights");
+                      
+                            if (value == true) {
+                              get_lights(db, 1);
+                      
+                              // rooms_listener(db);
+                            } else {
+                              get_lights(db, 0);
+                            }
+                            setState(() {
+                              _switchValue = value;
+                            });
+                      
+                            widget.onToggle();
+                          },
                         ),
-                      ],
-                    ),
-                   ),
-              // ),
-                  ),
-              Padding(
-              padding: EdgeInsets.symmetric(horizontal: 30, vertical: 15),
-              child:
-                  Row(
-                    // padding: EdgeInsets.only(left: 10,top:70),
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                       IconButton(
-                      icon:  Icon(
-                        Icons.edit,
-                        size:25,
-                        color: Color.fromARGB(255, 131, 126, 126),
+                        SizedBox(width: 5,),
+                           Flexible(
+                             child: SizedBox(
+                              width: 500,
+                               child: Text(
+                                  widget.title.toString().toUpperCase(),
+                                  softWrap: false,
+                                  overflow: TextOverflow.fade,
+                                  // maxLines: 1,                           
+                                  style: const TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.bold
+                                      , shadows: [
+                                      Shadow(
+                                        color: Color.fromARGB(255, 75, 26, 86),
+                                        blurRadius: 5,
+                                      ),
+                                      Shadow(
+                                        color: Color.fromARGB(255, 75, 26, 86),
+                                        blurRadius: 10,
+                                      ),
+                                      Shadow(
+                                        color: Color.fromARGB(255, 75, 26, 86),
+                                        blurRadius: 15,
+                                      ),
+                                    ]
+                                      ),
+                                            
+                                ),
+                             ),
+                           ),
+                          ],
+                        ),
+                       ),
+                                  // ),
                       ),
-                      onPressed: ()async{
-                          edit_alias_openDialog(widget.roomID);
-                      },
                     ),
-                        IconButton(
-                        onPressed:()=>{
-                          apiServices.removeRoom(widget.roomID)
-                        }
-                         //print(widget.roomID),
-                        //  apiServices.removeFeature(widget.roomID,),
-                          ,icon:  Icon(Icons.delete_sharp,size:25,color: Color.fromARGB(255, 172, 48, 48),)
-                    ),
-                    
-    
-    
-    
-                         ]
+                Flexible(
+                  child: Padding(
+                  padding: EdgeInsets.only(right: 10),
+                  child:
+                      Row(
+                        // padding: EdgeInsets.only(left: 10,top:70),
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        // crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                           IconButton(
+                          icon:  Icon(
+                            Icons.edit,
+                            size:25,
+                            color: Color.fromARGB(255, 131, 126, 126),
                           ),
-                  
-                          ),
-              
+                          onPressed: ()async{
+                              edit_alias_openDialog(widget.roomID);
+                          },
+                        ),
+                            IconButton(
+                            onPressed:()=>{
+                              apiServices.removeRoom(widget.roomID)
+                            }
+                             //print(widget.roomID),
+                            //  apiServices.removeFeature(widget.roomID,),
+                              ,icon:  Icon(Icons.delete_sharp,size:25,color: Color.fromARGB(255, 172, 48, 48),)
+                        ),
+                        
+                             ]
+                              ),
+                      
+                              ),
+                ),
                 
-              ]),
-                 
-                    
-           /*          
-               Padding(padding: EdgeInsets.only(top: 140,left:85),
-                  child:IconButton(
-                      onPressed:()async=>
-                      // print(lightKeys[index]),
-                      //  apiServices.removeLight(widget.roomID, lightKeys[index].toString().toLowerCase()),
-                      edit_alias_openDialog(lightKeys[index].toString().toLowerCase()),
-    
-                        icon:  Icon(Icons.edit,size:30,color: Color.fromARGB(255, 131, 126, 126),)
+                  
+                ]),
+                      ),
+                    ),
                   ),
-               ), */
-            ],
-          ),
-        ),
-    )
+               
+                   
+                      
+             /*          
+                 Padding(padding: EdgeInsets.only(top: 140,left:85),
+                    child:IconButton(
+                        onPressed:()async=>
+                        // print(lightKeys[index]),
+                        //  apiServices.removeLight(widget.roomID, lightKeys[index].toString().toLowerCase()),
+                        edit_alias_openDialog(lightKeys[index].toString().toLowerCase()),
+      
+                          icon:  Icon(Icons.edit,size:30,color: Color.fromARGB(255, 131, 126, 126),)
+                    ),
+                 ), */
+      )
+      ),
     );
   }
 }

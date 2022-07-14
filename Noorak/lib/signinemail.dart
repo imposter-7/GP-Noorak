@@ -4,6 +4,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:lastversion/Home.dart';
 import 'package:lastversion/classes/language.dart';
+import 'package:lastversion/main.dart';
 import 'package:lastversion/register.dart';
 import 'package:lastversion/screens/reset_password.dart';
 import 'package:lastversion/screens/reusable_widgets.dart';
@@ -237,7 +238,7 @@ class _Signinmail extends State<Signinmail> {
                 Text(
                       errorMessage,
                       style: const TextStyle(
-                          color: Color.fromARGB(221, 250, 9, 9), fontWeight: FontWeight.normal, fontSize: 16),
+                          color: Colors.white, fontWeight: FontWeight.normal, fontSize: 14),
                     ),
                 //----------------------------------------------
                 // const SizedBox(
@@ -265,14 +266,15 @@ class _Signinmail extends State<Signinmail> {
                                     email: _emailTextController.text.trim(),
                                     password: _passwordTextController.text.trim())
                                 .then((value) {
-                              Navigator.push(context,
-                                  MaterialPageRoute(builder: (context) => FirstHome()));
+                              navigationSerivce.removeandNavigateTo('/');
                             });
                             
                         }
                         
                         on FirebaseAuthException catch(error){
-                            errorMessage = error.message!;
+                           setState(() {
+                             errorMessage = error.message!;
+                           });  
                         }
 
                       }

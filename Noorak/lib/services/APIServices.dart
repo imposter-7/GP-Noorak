@@ -1,6 +1,8 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_database/firebase_database.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:lastversion/main.dart';
 import 'package:uuid/uuid.dart';
 
 class APIServices
@@ -107,6 +109,19 @@ class APIServices
     return user!.uid;
   }
 
+  bool isLoggedin()
+  {
+    final FirebaseAuth auth = FirebaseAuth.instance;
+    if(auth.currentUser != null)
+    {
+      print("logged in");
+      auth.currentUser!.reload().onError((error, stackTrace) => false);
+      return true;
+    }
+    else
+      return false;
+  }
+
    String? get_email(){
     final FirebaseAuth auth = FirebaseAuth.instance;
     final user = auth.currentUser;
@@ -150,6 +165,11 @@ class APIServices
     final DatabaseEvent event = await db.once();
     final Map data = event.snapshot.value as Map;
     return data;
+  }
+
+  Future<void> signOut() async {
+    await FirebaseAuth.instance.signOut();
+    navigationSerivce.removeandNavigateTo('/');
   }
 
 }

@@ -196,17 +196,6 @@ class _Profile extends State<Profile> {
     });
   }
 
-  Future<void> _signOut() async {
-    await FirebaseAuth.instance.authStateChanges().listen((User? user) async {
-      if (user == null)
-        // print('good bye');
-        Navigator.push(
-            context, MaterialPageRoute(builder: (context) => MainPage()));
-      else
-        //print('hi');
-      await FirebaseAuth.instance.signOut();
-    });
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -735,7 +724,7 @@ class _Profile extends State<Profile> {
                         padding: EdgeInsets.only(top: 420),
                         child: ElevatedButton(
                           onPressed: () async {
-                            _signOut();
+                            await apiServices.signOut();
                           },
                           style: ElevatedButton.styleFrom(
                               primary: Colors.transparent,

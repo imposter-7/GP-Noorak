@@ -71,135 +71,126 @@ class _RoomDetail extends State<RoomDetail> {
           ),
         ],
       ),
-      body: Stack(
-        children: [
-          Padding(
-            padding: EdgeInsets.only(top: 127, left: 70),
-            child: Container(
-              width: 280,
-              height: 130,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(15),
-                color: Color.fromARGB(171, 236, 117, 147),
-                 boxShadow: [
-                            // isPressed?
-                            BoxShadow(
-                              color: Color.fromARGB(255, 152, 92, 174).withAlpha(255),
-                               blurRadius: 15,
-                               spreadRadius: 1,
-                               offset: Offset(0,0)                               
-                               )
-                              //  :
-                              //  BoxShadow()
-                          ],
-                          gradient: LinearGradient(colors: [
-                            Color.fromARGB(255, 37, 219, 152),
-                            Color.fromARGB(255, 107, 208, 45),
-                            
-                          ],
-                          begin: Alignment.centerRight,
-                          end: Alignment.centerLeft
-                          
-                          )
-                // image: DecorationImage(
-                //   image:
-                //       AssetImage("images/2855009bf094635e8cb1d32c65b7c99b.png"),
-                //   fit: BoxFit.cover,
-                // ),
-              ),
-            ),
-          ),
-          GestureDetector(
-              child: Padding(
-                padding: EdgeInsets.symmetric(vertical: 170, horizontal: 108),
-                child: Text(
-                  AppLocalizations.of(context)!.manual,
-                  style: TextStyle(
-                      fontSize: 28,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white
-                      , shadows: [
-                            Shadow(
-                              color: Color.fromARGB(255, 26, 86, 57),
-                              blurRadius: 5,
-                            ),
-                            Shadow(
-                              color: Color.fromARGB(255, 26, 86, 57),
-                              blurRadius: 6,
-                            ),
-                            Shadow(
-                              color: Color.fromARGB(255, 26, 86, 57),
-                              blurRadius: 9,
-                            ),
-                          ]
-                      ),
-                  textAlign: TextAlign.center,
-                ),
-              ),
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => AddLight(roomID: widget.roomID)),
-                );
-              }),
-          GestureDetector(
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                    builder: (context) => AutoDetails(roomID: widget.roomID)),
-              );
-            },
-            child: Padding(
-              padding: EdgeInsets.only(top: 280, left: 70),
-              child: Container(
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            InkWell(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => AddLight(roomID: widget.roomID)));
+                },
+                child: Container(
                 width: 280,
                 height: 130,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(15),
-                  color: Color.fromARGB(171, 28, 44, 67),
+                  color: Color.fromARGB(171, 236, 117, 147),
                    boxShadow: [
-                            // isPressed?
-                            BoxShadow(
-                              color: Color.fromARGB(255, 152, 92, 174).withAlpha(255),
-                               blurRadius: 10,
-                               spreadRadius: 1,
-                               offset: Offset(0,0)                               
-                               )
-                              //  :
-                              //  BoxShadow()
-                          ],
-                          gradient: LinearGradient(colors: [
-                            Color.fromARGB(255, 23, 0, 201),
-                            Color.fromARGB(255, 163, 30, 150),
+                              // isPressed?
+                              BoxShadow(
+                                color: Color.fromARGB(255, 152, 92, 174).withAlpha(255),
+                                 blurRadius: 15,
+                                 spreadRadius: 1,
+                                 offset: Offset(0,0)                               
+                                 )
+                                //  :
+                                //  BoxShadow()
+                            ],
+                            gradient: LinearGradient(colors: [
+                              Color.fromARGB(255, 37, 219, 152),
+                              Color.fromARGB(255, 107, 208, 45),
+                              
+                            ],
+                            begin: Alignment.centerRight,
+                            end: Alignment.centerLeft
                             
-                          ],
-                          begin: Alignment.centerRight,
-                          end: Alignment.centerLeft
+                            )
+                ),
+                child: Center(
+                  child: Text(
+                      AppLocalizations.of(context)!.manual,
+                      style: TextStyle(
+                          fontSize: 28,
                           
-                          )
-                  // image: DecorationImage(
-                  //   image: AssetImage(
-                  //       "images/2855009bf094635e8cb1d32c65b7c99b.png"),
-                  //   fit: BoxFit.cover,
-                  // ),
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white
+                          , shadows: [
+                                Shadow(
+                                  color: Color.fromARGB(255, 26, 86, 57),
+                                  blurRadius: 5,
+                                ),
+                                Shadow(
+                                  color: Color.fromARGB(255, 26, 86, 57),
+                                  blurRadius: 6,
+                                ),
+                                Shadow(
+                                  color: Color.fromARGB(255, 26, 86, 57),
+                                  blurRadius: 9,
+                                ),
+                              ]
+                          ),
+                      textAlign: TextAlign.center,
+                  ),
+                ),
                 ),
               ),
+            
+            SizedBox(height: 30,),
+            GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => AutoDetails(roomID: widget.roomID)),
+                );
+              },
+              child: Container(
+                  width: 280,
+                  height: 130,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(15),
+                    color: Color.fromARGB(171, 28, 44, 67),
+                     boxShadow: [
+                              // isPressed?
+                              BoxShadow(
+                                color: Color.fromARGB(255, 152, 92, 174).withAlpha(255),
+                                 blurRadius: 10,
+                                 spreadRadius: 1,
+                                 offset: Offset(0,0)                               
+                                 )
+                                //  :
+                                //  BoxShadow()
+                            ],
+                            gradient: LinearGradient(colors: [
+                              Color.fromARGB(255, 23, 0, 201),
+                              Color.fromARGB(255, 163, 30, 150),
+                              
+                            ],
+                            begin: Alignment.centerRight,
+                            end: Alignment.centerLeft
+                            
+                            ),
+                    
+                  ),
+                  child: Center(
+                    child: Text(
+                AppLocalizations.of(context)!.autodetails,
+                style: TextStyle(
+                      fontSize: 27,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white),
+                textAlign: TextAlign.center,
+              ),
+                  ),
+                ),
+              
             ),
-          ),
-          Padding(
-            padding: EdgeInsets.only(top: 330, left: 95),
-            child: Text(
-              AppLocalizations.of(context)!.autodetails,
-              style: TextStyle(
-                  fontSize: 27,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white),
-              textAlign: TextAlign.center,
-            ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

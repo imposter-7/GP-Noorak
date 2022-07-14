@@ -4,6 +4,7 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:lastversion/mainpage.dart';
 import 'package:lastversion/services/APIServices.dart';
+import 'package:lastversion/services/NavService.dart';
 import 'package:provider/provider.dart';
 import 'package:lastversion/l10n/l10n.dart';
 
@@ -12,14 +13,7 @@ import 'package:lastversion/provider/provider.dart';
 
 final APIServices apiServices = APIServices();
 
-//import 'package:responsive_framework/responsive_framework.dart';
-
-//sethompage back the defult but now test the smart page
-//import 'Home.dart';
-
-// void main() {
-//   runApp(const MaterialApp(home: MainPage()));
-// }
+NavigationService navigationSerivce = NavigationService();
 
 void main() async {
   // Future initialization(BuildContext? context) async {
@@ -39,7 +33,10 @@ void main() async {
         final provider = Provider.of<LocalProvider>(context);
         return MaterialApp(
           debugShowCheckedModeBanner: false,
-          home: MainPage(),
+          navigatorKey: navigationSerivce.navigatorKey,
+           onGenerateRoute: (settings) => generateRoute(settings),
+          initialRoute: '/',
+          // home: MainPage(),
           supportedLocales: L10n.all,
           locale: provider.locale,
           localizationsDelegates: [
