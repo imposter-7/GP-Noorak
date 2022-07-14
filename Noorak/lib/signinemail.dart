@@ -46,7 +46,7 @@ class _Signinmail extends State<Signinmail> {
                  
                    flickeringText: true,
                    flickeringLetters: null,
-                   fontSize: 35,
+                   fontSize: 30,
                    glowingDuration: new Duration(seconds: 3),
              ),
         // Text("NOORAK ",

@@ -31,16 +31,19 @@ extendBodyBehindAppBar:true,
       
         backgroundColor: Colors.transparent,
         elevation: 0,
+
+    
         title:
+        
          Neon(
                    text:"NOORAK",
                    color: Colors.pink,
                    font: NeonFont.Monoton,
                   // font: NeonFont.TextMeOne,
-                 
+                   
                    flickeringText: true,
                    flickeringLetters: null,
-                   fontSize: 35,
+                   fontSize: 30,
                    glowingDuration: new Duration(seconds: 3),
              )
         // Text(

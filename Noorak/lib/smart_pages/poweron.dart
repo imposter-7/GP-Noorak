@@ -108,7 +108,7 @@ Future<String?> openDialog() {
               fillColor: Color.fromARGB(255, 228, 193, 220),
               child: Text(
                 _selectedTime,
-                style: TextStyle(color: Colors.white),
+                style: TextStyle(color: Colors.black),
               ),
               onPressed: () {
                 _openTimerPicker(context);
