@@ -116,7 +116,28 @@ class _AddLight extends State<AddLight> {
     return Scaffold(
        backgroundColor: Colors.black,
       appBar: AppBar(
-        title:  Text(AppLocalizations.of(context)!.light),
+        title:  Text(
+          AppLocalizations.of(context)!.light
+           ,style: TextStyle(
+                          fontSize: 22,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                          shadows: [
+                            Shadow(
+                              color: Color.fromARGB(255, 221, 210, 89),
+                              blurRadius: 3,
+                            ),
+                            Shadow(
+                             color: Color.fromARGB(255, 183, 173, 58),
+                              blurRadius: 6,
+                            ),
+                            Shadow(
+                            color:  Color.fromARGB(255, 183, 173, 58),
+                              blurRadius: 9,
+                            ),
+                          ]
+                          ),
+          ),
         centerTitle: true,
         backgroundColor: Colors.black,
         actions:<Widget> [
@@ -168,9 +189,32 @@ class _AddLight extends State<AddLight> {
               children: [
               Row(
                 
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                Text(data[lightKeys[index]]['alias'], style: TextStyle(color: Colors.white, fontSize: 20,),),
+                Text(
+                  data[lightKeys[index]]['alias'],
+                 style: 
+                 TextStyle(
+                  color: Colors.white, 
+                  fontSize: 20,
+                   shadows: [
+                            Shadow(
+                              color: Color.fromARGB(255, 183, 133, 58),
+                              blurRadius: 3,
+                            ),
+                            Shadow(
+                             color: Color.fromARGB(255, 183, 133, 58),
+                              blurRadius: 6,
+                            ),
+                            Shadow(
+                            color:  Color.fromARGB(255, 183, 133, 58),
+                              blurRadius: 9,
+                            ),
+                          ]
+                  ),
+                 
+                 
+                 ),
               
            
                 ],

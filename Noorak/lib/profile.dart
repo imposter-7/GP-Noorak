@@ -9,6 +9,7 @@ import 'package:lastversion/main.dart';
 import 'package:lastversion/mainpage.dart';
 import 'package:lastversion/notifications/notification_api.dart';
 import 'package:lastversion/screens/reusable_widgets.dart';
+import 'package:neon/neon.dart';
 import 'package:timezone/timezone.dart' as tz;
 import 'package:timezone/data/latest.dart' as tz;
 import 'package:lastversion/provider/provider.dart';
@@ -217,7 +218,28 @@ class _Profile extends State<Profile> {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
-        title: Text(AppLocalizations.of(context)!.profile),
+        title: Text(
+          AppLocalizations.of(context)!.profile
+          ,style: TextStyle(
+                          fontSize: 22,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                          shadows: [
+                            Shadow(
+                              color: Colors.deepOrangeAccent,
+                              blurRadius: 3,
+                            ),
+                            Shadow(
+                             color: Colors.deepOrangeAccent,
+                              blurRadius: 6,
+                            ),
+                            Shadow(
+                            color: Colors.deepOrangeAccent,
+                              blurRadius: 9,
+                            ),
+                          ]
+                          ),
+          ),
         centerTitle: true,
         backgroundColor: Colors.black,
         actions: <Widget>[
@@ -246,26 +268,25 @@ class _Profile extends State<Profile> {
       ),
       body: SingleChildScrollView(
         child: SizedBox(
-          height: 800,
-          child: Container(
-            padding: EdgeInsets.only(left: 15, top: 20, right: 35),
-            child: GestureDetector(
-              onTap: () {
-                FocusScope.of(context).unfocus();
-              },
-              child: ListView(
+          height: MediaQuery.of(context).size.height*1.11,
+          child:
+           Container(
+            padding: EdgeInsets.symmetric(horizontal: 20),
+            
+           
+              child: Column(
                 children: [
                   Center(
-                      child: Stack(
+                      child: Column(
                     children: [
                       Padding(
                         padding:
-                            EdgeInsets.only(left: 130, right: 115, top: 15),
+                            EdgeInsets.only(left: 130, right: 115, top: 5),
                         child: Container(
-                          width: 100,
-                          height: 100,
+                          width: 390,
+                          height: 150,
                           decoration: BoxDecoration(
-                              border: Border.all(width: 4, color: Colors.white),
+                              border: Border.all(width: 1, color: Colors.black),
                               boxShadow: [
                                 BoxShadow(
                                     spreadRadius: 2,
@@ -274,41 +295,97 @@ class _Profile extends State<Profile> {
                               ],
                               shape: BoxShape.circle,
                               image: DecorationImage(
-                                fit: BoxFit.cover,
-                                image: AssetImage('images/bulbback.png'),
+                                fit: BoxFit.contain,
+                                image: AssetImage('images/2.jpg'),
                               )),
                         ),
                       ),
                       Container(
                         padding:
-                            EdgeInsets.only(top: 140, left: 115, right: 115),
-                        child: Text(
-                          // "The name ",
-                          apiServices.get_email().toString().split("@")[0],
+                            EdgeInsets.symmetric(horizontal: 10,vertical: 10),
+                        child:
+                          Neon(
+                            text:
+                            apiServices.get_email().toString().split("@")[0],
+                            color: Colors.pink,
+                            // font: NeonFont.Monoton,
+                            font: NeonFont.TextMeOne,
+                          
+                            flickeringText: true,
+                            flickeringLetters: null,
+                            fontSize: 35,
+                            glowingDuration: new Duration(seconds: 3),
+                      ),
+                                  
+                        //  Text(
+                        //   // "The name ",
+                        //   apiServices.get_email().toString().split("@")[0],
 
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 30,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
+                        //   style: TextStyle(
+                        //     color: Colors.white,
+                        //     fontSize: 28,
+                        //     fontWeight: FontWeight.bold,
+                        //      shadows: [
+                        //     Shadow(
+                        //       color: Colors.white,
+                        //       blurRadius: 3,
+                        //     ),
+                        //     Shadow(
+                        //       color: Colors.white,
+                        //       blurRadius: 6,
+                        //     ),
+                        //     Shadow(
+                        //       color: Colors.white,
+                        //       blurRadius: 9,
+                        //     ),
+                        //   ]
+                        //   ),
+                        // ),
                       ),
                       // CountdownTimer(
                       //   endTime: endTime,
                       //   onEnd: onEnd,
                       //   ),
                       Container(
-                        padding: EdgeInsets.only(top: 190, left: 90),
-                        child: Text(
-                          // " Email@gmail.com",
-                          apiServices.get_email().toString(),
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
-                            decoration: TextDecoration.underline,
-                          ),
-                        ),
+                        padding:  EdgeInsets.symmetric(horizontal: 10,vertical: 1),
+                        child:
+                         Neon(
+                            text:
+                            apiServices.get_email().toString(),
+                            color: Colors.pink,
+                            // font: NeonFont.Monoton,
+                            font: NeonFont.TextMeOne,
+                          
+                            flickeringText: true,
+                            // flickeringLetters: null,
+                            fontSize: 22,
+                            glowing: true,
+                            glowingDuration: new Duration(seconds: 3),
+                      ),
+                        //  Text(
+                        //   // " Email@gmail.com",
+                        //   apiServices.get_email().toString(),
+                        //   style: TextStyle(
+                        //     color: Colors.white,
+                        //     fontSize: 22,
+                        //     fontWeight: FontWeight.bold,
+                        //     decoration: TextDecoration.underline,
+                        //      shadows: [
+                        //     Shadow(
+                        //       color: Colors.white,
+                        //       blurRadius: 3,
+                        //     ),
+                        //     Shadow(
+                        //       color: Colors.white,
+                        //       blurRadius: 6,
+                        //     ),
+                        //     Shadow(
+                        //       color: Colors.white,
+                        //       blurRadius: 9,
+                        //     ),
+                        //   ]
+                        //   ),
+                        // ),
                       ),
                     ],
                   )),
@@ -344,7 +421,21 @@ class _Profile extends State<Profile> {
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 20,
-                            fontWeight: FontWeight.w100,
+                            fontWeight: FontWeight.w300,
+                             shadows: [
+                            Shadow(
+                              color: Colors.black,
+                              blurRadius: 3,
+                            ),
+                            Shadow(
+                              color:Colors.black,
+                              blurRadius: 6,
+                            ),
+                            Shadow(
+                              color: Colors.white70,
+                              blurRadius: 9,
+                            ),
+                          ]
                           ),
                         ),
                       ),
@@ -417,6 +508,20 @@ class _Profile extends State<Profile> {
                               color: Colors.white,
                               fontSize: 20,
                               fontWeight: FontWeight.bold,
+                               shadows: [
+                            Shadow(
+                              color: Colors.black,
+                              blurRadius: 3,
+                            ),
+                            Shadow(
+                              color:Colors.black,
+                              blurRadius: 6,
+                            ),
+                            Shadow(
+                              color: Colors.white70,
+                              blurRadius: 9,
+                            ),
+                          ]
                             ),
                           ),
                         ),
@@ -431,7 +536,21 @@ class _Profile extends State<Profile> {
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 20,
-                            fontWeight: FontWeight.w100,
+                            fontWeight: FontWeight.w300,
+                            shadows: [
+                            Shadow(
+                              color: Colors.black,
+                              blurRadius: 3,
+                            ),
+                            Shadow(
+                              color:Colors.black,
+                              blurRadius: 6,
+                            ),
+                            Shadow(
+                              color: Colors.white70,
+                              blurRadius: 9,
+                            ),
+                          ]
                           ),
                         ),
                       ),
@@ -454,7 +573,7 @@ class _Profile extends State<Profile> {
                         child: Icon(
                           Icons.add_location,
                           size: 40,
-                          color: Colors.orange,
+                          color: Color.fromARGB(248, 233, 95, 210),
                         ),
                       ),
                       Padding(
@@ -468,6 +587,20 @@ class _Profile extends State<Profile> {
                             color: Colors.white,
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
+                             shadows: [
+                            Shadow(
+                              color: Colors.black,
+                              blurRadius: 3,
+                            ),
+                            Shadow(
+                              color:Colors.black,
+                              blurRadius: 6,
+                            ),
+                            Shadow(
+                              color: Colors.white70,
+                              blurRadius: 9,
+                            ),
+                          ]
                           ),
                         ),
                       ),
@@ -481,58 +614,155 @@ class _Profile extends State<Profile> {
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 20,
-                            fontWeight: FontWeight.w100,
+                            fontWeight: FontWeight.w300,
+                             shadows: [
+                            Shadow(
+                              color: Colors.black,
+                              blurRadius: 3,
+                            ),
+                            Shadow(
+                              color:Colors.black,
+                              blurRadius: 6,
+                            ),
+                            Shadow(
+                              color: Colors.white70,
+                              blurRadius: 9,
+                            ),
+                          ]
                           ),
                         ),
                       ),
-                      Padding(
-                        padding: EdgeInsets.only(top: 330, left: 50),
-                        child: ElevatedButton(
-                          onPressed: () {},
-                          style: ElevatedButton.styleFrom(
-                              primary: Colors.orange,
-                              padding: EdgeInsets.symmetric(horizontal: 70),
-                              shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(20))),
-                          child: Text(AppLocalizations.of(context)!.checkre,
-                              style: TextStyle(
-                                  fontSize: 15,
-                                  letterSpacing: 2,
-                                  color: Colors.white)),
+                      // Padding(
+                      //   padding: EdgeInsets.only(top: 330, left: 50),
+                      //   child: ElevatedButton(
+                      //     onPressed: () {},
+                      //     style: ElevatedButton.styleFrom(
+                      //         primary: Colors.orange,
+                      //         padding: EdgeInsets.symmetric(horizontal: 70),
+                      //         shape: RoundedRectangleBorder(
+                      //             borderRadius: BorderRadius.circular(20)
+                      //             )
+                      //             ),
+                      //     child: Text(AppLocalizations.of(context)!.checkre,
+                      //         style: TextStyle(
+                      //             fontSize: 15,
+                      //             letterSpacing: 0.5,
+                      //             color: Colors.white)),
+                      //   ),
+                      // ),
+
+                   GestureDetector(
+                    child: Padding(
+                      padding: EdgeInsets.only(top: 320),
+                      child: Container(
+                        width: 380,
+                        height: 60,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(15),
+                          color: Color.fromARGB(255, 218, 210, 219),
+                           boxShadow: [
+                            // isPressed?
+                            BoxShadow(
+                              color: Color.fromARGB(255, 163, 163, 163).withAlpha(255),
+                               blurRadius: 5,
+                               spreadRadius: 1,
+                               offset: Offset(0,0)                               
+                               )
+                              //  :
+                              //  BoxShadow()
+                          ],
+                          gradient: LinearGradient(colors: [
+                            Color.fromARGB(255, 115, 22, 92),
+                            Color.fromARGB(232, 160, 12, 133),
+                          ],
+                          begin: Alignment.centerRight,
+                          end: Alignment.centerLeft
+                          
+                          )
                         ),
                       ),
+                    ),
+                    onTap: () {
+                      // Navigator.push(
+                      //   context,
+                      //   MaterialPageRoute(builder: (context) => Poweroff()),
+                      // );
+                    },
+                  ),
+
+                   Padding(
+                    padding: EdgeInsets.only(left: 20, top: 335),
+                    child: Text(
+                      AppLocalizations.of(context)!.spoweroff,
+                      style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                          shadows: [
+                            Shadow(
+                              color: Colors.black,
+                              blurRadius: 3,
+                            ),
+                            Shadow(
+                              color:Colors.black,
+                              blurRadius: 6,
+                            ),
+                            Shadow(
+                              color: Colors.white70,
+                              blurRadius: 9,
+                            ),
+                          ]
+                          ),
+                    ),
+                  ),
 
                       //////////////logout button//////
+                      // Padding(
+                      //   padding: EdgeInsets.only(
+                      //     left: 20,
+                      //     top: 390,
+                      //   ),
+                      //   child: Text(
+                      //     AppLocalizations.of(context)!.logout,
+                      //     style: TextStyle(
+                      //       color: Colors.white,
+                      //       fontSize: 20,
+                      //       fontWeight: FontWeight.w300,
+                      //     ),
+                      //   ),
+                      // ),
                       Padding(
-                        padding: EdgeInsets.only(
-                          left: 20,
-                          top: 390,
-                        ),
-                        child: Text(
-                          AppLocalizations.of(context)!.logout,
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 20,
-                            fontWeight: FontWeight.w100,
-                          ),
-                        ),
-                      ),
-                      Padding(
-                        padding: EdgeInsets.only(top: 420, left: 100),
+                        padding: EdgeInsets.only(top: 420),
                         child: ElevatedButton(
                           onPressed: () async {
                             _signOut();
                           },
                           style: ElevatedButton.styleFrom(
-                              primary: Colors.orange,
-                              padding: EdgeInsets.symmetric(horizontal: 70),
+                              primary: Colors.transparent,
+                              padding: EdgeInsets.only(left: 150),
                               shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(20))),
                           child: Text(AppLocalizations.of(context)!.logout,
                               style: TextStyle(
-                                  fontSize: 15,
+                                  fontSize: 18,
                                   letterSpacing: 2,
-                                  color: Colors.white)),
+                                  color: Colors.white,
+                                   shadows: [
+                                    Shadow(
+                                      color: Colors.white,
+                                      blurRadius: 3,
+                                    ),
+                                    Shadow(
+                                      color: Colors.white,
+                                      blurRadius: 6,
+                                    ),
+                                    Shadow(
+                                      color: Colors.white,
+                                      blurRadius: 9,
+                                    ),
+                                  ]
+                                  )
+                                  ),
                         ),
                       ),
 
@@ -563,7 +793,7 @@ class _Profile extends State<Profile> {
                   )
                 ],
               ),
-            ),
+           
           ),
         ),
       ),

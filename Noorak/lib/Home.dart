@@ -65,7 +65,30 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
-        title: Text(AppLocalizations.of(context)!.myhome),
+        
+        title: Text(
+          AppLocalizations.of(context)!.myhome
+           ,style: TextStyle(
+                          fontSize: 22,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                          shadows: [
+                            Shadow(
+                              color: Color.fromARGB(255, 161, 86, 223),
+                              blurRadius: 3,
+                            ),
+                            Shadow(
+                             color: Color.fromARGB(255, 161, 86, 223),
+                              blurRadius: 6,
+                            ),
+                            Shadow(
+                            color: Color.fromARGB(255, 161, 86, 223),
+                              blurRadius: 9,
+                            ),
+                          ]
+                          ),
+          ),
+        
         centerTitle: true,
         backgroundColor: Colors.black,
         actions: <Widget>[
@@ -298,7 +321,22 @@ class _RoomState extends State<Room> {
                           style: const TextStyle(
                               color: Colors.white,
                               fontSize: 22,
-                              fontWeight: FontWeight.bold),
+                              fontWeight: FontWeight.bold
+                              , shadows: [
+                              Shadow(
+                                color: Color.fromARGB(255, 75, 26, 86),
+                                blurRadius: 5,
+                              ),
+                              Shadow(
+                                color: Color.fromARGB(255, 75, 26, 86),
+                                blurRadius: 10,
+                              ),
+                              Shadow(
+                                color: Color.fromARGB(255, 75, 26, 86),
+                                blurRadius: 15,
+                              ),
+                            ]
+                              ),
                                     
                         ),
                       ],

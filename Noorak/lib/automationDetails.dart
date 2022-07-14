@@ -19,7 +19,28 @@ class _AutoDetails extends State<AutoDetails> {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
-        title: const Text("Automation Details"),
+        title: const Text(
+          "Automation Details",
+           style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                          shadows: [
+                            Shadow(
+                              color: Color.fromARGB(255, 51, 153, 204),
+                              blurRadius: 3,
+                            ),
+                            Shadow(
+                              color: Color.fromARGB(255, 51, 153, 204),
+                              blurRadius: 6,
+                            ),
+                            Shadow(
+                              color: Color.fromARGB(255, 51, 153, 204),
+                              blurRadius: 9,
+                            ),
+                          ]
+                          ),
+          ),
         centerTitle: true,
         backgroundColor: Colors.black,
       ),

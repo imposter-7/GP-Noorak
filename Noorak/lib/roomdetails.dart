@@ -23,7 +23,28 @@ class _RoomDetail extends State<RoomDetail> {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
-        title:  Text(AppLocalizations.of(context)!.myhome),
+        title:  Text(
+          AppLocalizations.of(context)!.myhome
+          ,style: TextStyle(
+                          fontSize: 22,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                          shadows: [
+                            Shadow(
+                              color: Color.fromARGB(255, 183, 173, 58),
+                              blurRadius: 3,
+                            ),
+                            Shadow(
+                             color: Color.fromARGB(255, 183, 173, 58),
+                              blurRadius: 6,
+                            ),
+                            Shadow(
+                            color:  Color.fromARGB(255, 183, 173, 58),
+                              blurRadius: 9,
+                            ),
+                          ]
+                          ),
+          ),
         centerTitle: true,
         backgroundColor: Colors.black,
         actions: <Widget>[
@@ -60,11 +81,31 @@ class _RoomDetail extends State<RoomDetail> {
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(15),
                 color: Color.fromARGB(171, 236, 117, 147),
-                image: DecorationImage(
-                  image:
-                      AssetImage("images/2855009bf094635e8cb1d32c65b7c99b.png"),
-                  fit: BoxFit.cover,
-                ),
+                 boxShadow: [
+                            // isPressed?
+                            BoxShadow(
+                              color: Color.fromARGB(255, 152, 92, 174).withAlpha(255),
+                               blurRadius: 15,
+                               spreadRadius: 1,
+                               offset: Offset(0,0)                               
+                               )
+                              //  :
+                              //  BoxShadow()
+                          ],
+                          gradient: LinearGradient(colors: [
+                            Color.fromARGB(255, 37, 219, 152),
+                            Color.fromARGB(255, 107, 208, 45),
+                            
+                          ],
+                          begin: Alignment.centerRight,
+                          end: Alignment.centerLeft
+                          
+                          )
+                // image: DecorationImage(
+                //   image:
+                //       AssetImage("images/2855009bf094635e8cb1d32c65b7c99b.png"),
+                //   fit: BoxFit.cover,
+                // ),
               ),
             ),
           ),
@@ -76,7 +117,22 @@ class _RoomDetail extends State<RoomDetail> {
                   style: TextStyle(
                       fontSize: 28,
                       fontWeight: FontWeight.bold,
-                      color: Colors.white),
+                      color: Colors.white
+                      , shadows: [
+                            Shadow(
+                              color: Color.fromARGB(255, 26, 86, 57),
+                              blurRadius: 5,
+                            ),
+                            Shadow(
+                              color: Color.fromARGB(255, 26, 86, 57),
+                              blurRadius: 6,
+                            ),
+                            Shadow(
+                              color: Color.fromARGB(255, 26, 86, 57),
+                              blurRadius: 9,
+                            ),
+                          ]
+                      ),
                   textAlign: TextAlign.center,
                 ),
               ),
@@ -102,12 +158,32 @@ class _RoomDetail extends State<RoomDetail> {
                 height: 130,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(15),
-                  color: Color.fromARGB(171, 32, 88, 170),
-                  image: DecorationImage(
-                    image: AssetImage(
-                        "images/2855009bf094635e8cb1d32c65b7c99b.png"),
-                    fit: BoxFit.cover,
-                  ),
+                  color: Color.fromARGB(171, 28, 44, 67),
+                   boxShadow: [
+                            // isPressed?
+                            BoxShadow(
+                              color: Color.fromARGB(255, 152, 92, 174).withAlpha(255),
+                               blurRadius: 10,
+                               spreadRadius: 1,
+                               offset: Offset(0,0)                               
+                               )
+                              //  :
+                              //  BoxShadow()
+                          ],
+                          gradient: LinearGradient(colors: [
+                            Color.fromARGB(255, 23, 0, 201),
+                            Color.fromARGB(255, 163, 30, 150),
+                            
+                          ],
+                          begin: Alignment.centerRight,
+                          end: Alignment.centerLeft
+                          
+                          )
+                  // image: DecorationImage(
+                  //   image: AssetImage(
+                  //       "images/2855009bf094635e8cb1d32c65b7c99b.png"),
+                  //   fit: BoxFit.cover,
+                  // ),
                 ),
               ),
             ),

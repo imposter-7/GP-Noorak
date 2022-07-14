@@ -6,6 +6,7 @@ import 'package:lastversion/signinemail.dart';
 import 'package:lastversion/l10n/l10n.dart';
 import 'package:lastversion/provider/provider.dart';
 import 'package:lastversion/signinemail.dart';
+import 'package:neon/neon.dart';
 import 'package:provider/provider.dart';
 import "package:flutter_gen/gen_l10n/app_localizations.dart";
 
@@ -32,20 +33,32 @@ class _Signin extends State<Signin> {
         
         backgroundColor: Colors.transparent,
         elevation: 0,
-        title:Text("NOORAK ",
-        style: TextStyle(color:Colors.white,
-        fontSize: 35,
-        fontWeight: FontWeight.bold,
-        shadows: const <Shadow>[
-                          Shadow(
-                          offset: Offset(5.0, 5.0),
-                          blurRadius: 8.0,
-                          color: Color.fromARGB(124, 3, 3, 3),
-                        ),
-                      ],
-        ),
+        title:
+         Neon(
+                   text:"NOORAK",
+                   color: Colors.pink,
+                   font: NeonFont.Monoton,
+                  // font: NeonFont.TextMeOne,
+                 
+                   flickeringText: true,
+                   flickeringLetters: null,
+                   fontSize: 35,
+                   glowingDuration: new Duration(seconds: 3),
+             ),
+        // Text("NOORAK ",
+        // style: TextStyle(color:Colors.white,
+        // fontSize: 35,
+        // fontWeight: FontWeight.bold,
+        // shadows: const <Shadow>[
+        //                   Shadow(
+        //                   offset: Offset(5.0, 5.0),
+        //                   blurRadius: 8.0,
+        //                   color: Color.fromARGB(124, 3, 3, 3),
+        //                 ),
+        //               ],
+        // ),
         
-        ),
+        // ),
         centerTitle: true,
           actions: <Widget>[
 

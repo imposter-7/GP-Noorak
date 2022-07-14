@@ -61,7 +61,29 @@ Future<String?> openDialog() {
       
       backgroundColor: Colors.black,
       appBar: AppBar(
-        title: const Text("Home"),
+        title: const Text(
+          "Notifications",
+           style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                          shadows: [
+                            Shadow(
+                              color: Colors.deepOrangeAccent,
+                              blurRadius: 3,
+                            ),
+                            Shadow(
+                              color: Colors.deepOrangeAccent,
+                              blurRadius: 6,
+                            ),
+                            Shadow(
+                              color: Colors.deepOrangeAccent,
+                              blurRadius: 9,
+                            ),
+                          ]
+                          ),
+          
+          ),
         centerTitle: true,
         backgroundColor: Colors.black,
       

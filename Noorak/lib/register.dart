@@ -9,6 +9,7 @@ import 'package:lastversion/main.dart';
 import 'package:lastversion/mainsignin.dart';
 import 'package:lastversion/screens/reset_password.dart';
 import 'package:lastversion/screens/reusable_widgets.dart';
+import 'package:neon/neon.dart';
 import 'Firsthome.dart';
 import 'classes/language.dart';
 import 'l10n/l10n.dart';
@@ -39,21 +40,34 @@ class _Register extends State<Register> {
         appBar: AppBar(
           backgroundColor: Colors.transparent,
           elevation: 0,
-          title: Text(
-            "NOORAK ",
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 35,
-              fontWeight: FontWeight.bold,
-              shadows: const <Shadow>[
-                Shadow(
-                  offset: Offset(5.0, 5.0),
-                  blurRadius: 8.0,
-                  color: Color.fromARGB(124, 3, 3, 3),
-                ),
-              ],
-            ),
-          ),
+          title: 
+          Neon(
+                   text:"NOORAK",
+                   color: Colors.pink,
+                   font: NeonFont.Monoton,
+                   
+                  // font: NeonFont.TextMeOne,
+                 
+                   flickeringText: true,
+                   flickeringLetters: null,
+                   fontSize: 35,
+                   glowingDuration: new Duration(seconds: 3),
+             ),
+          // Text(
+          //   "NOORAK ",
+          //   style: TextStyle(
+          //     color: Colors.white,
+          //     fontSize: 35,
+          //     fontWeight: FontWeight.bold,
+          //     shadows: const <Shadow>[
+          //       Shadow(
+          //         offset: Offset(5.0, 5.0),
+          //         blurRadius: 8.0,
+          //         color: Color.fromARGB(124, 3, 3, 3),
+          //       ),
+          //     ],
+          //   ),
+          // ),
           centerTitle: true,
           actions: <Widget>[
             Padding(

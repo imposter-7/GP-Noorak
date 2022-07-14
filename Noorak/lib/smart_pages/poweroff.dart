@@ -61,7 +61,28 @@ Future<String?> openDialog() {
       
       backgroundColor: Colors.black,
       appBar: AppBar(
-        title: const Text("Power-off"),
+        title: const Text(
+          "Power-off",
+           style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                          shadows: [
+                            Shadow(
+                              color: Colors.grey,
+                              blurRadius: 3,
+                            ),
+                            Shadow(
+                              color: Colors.grey,
+                              blurRadius: 6,
+                            ),
+                            Shadow(
+                              color: Colors.grey,
+                              blurRadius: 9,
+                            ),
+                          ]
+                          ),
+          ),
         centerTitle: true,
         backgroundColor: Colors.black,
       ),

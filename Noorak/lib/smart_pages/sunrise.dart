@@ -53,7 +53,30 @@ Future<String?> openDialog() {
       
       backgroundColor: Colors.black,
       appBar: AppBar(
-        title: const Text("Sunrise"),
+        title: const Text
+        (
+          "Sunrise",
+           style: TextStyle(
+                          fontSize: 22,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                          shadows: [
+                            Shadow(
+                              color: Colors.blue,
+                              blurRadius: 3,
+                            ),
+                            Shadow(
+                              color: Colors.blue,
+                              blurRadius: 6,
+                            ),
+                            Shadow(
+                             color: Colors.blue,
+                              blurRadius: 9,
+                            ),
+                          ]
+                          ),
+        
+        ),
         centerTitle: true,
         backgroundColor: Colors.black,
       ),

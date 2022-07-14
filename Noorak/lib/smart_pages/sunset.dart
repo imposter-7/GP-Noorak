@@ -55,7 +55,28 @@ class _SunSet extends State<SunSet> {
       
       backgroundColor: Colors.black,
       appBar: AppBar(
-        title: const Text("Sunset"),
+        title: const Text(
+          "Sunset",
+            style: TextStyle(
+                          fontSize: 22,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                          shadows: [
+                            Shadow(
+                              color: Colors.green,
+                              blurRadius: 3,
+                            ),
+                            Shadow(
+                              color: Colors.green,
+                              blurRadius: 6,
+                            ),
+                            Shadow(
+                             color: Colors.green,
+                              blurRadius: 9,
+                            ),
+                          ]
+                          ),
+          ),
         centerTitle: true,
         backgroundColor: Colors.black,
       ),
