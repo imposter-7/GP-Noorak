@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\Lenovo\\Downloads\\MergedVersion-main (2)\\MergedVersion-main\\Noorak\\build\\flutter_native_splash\\intermediates\\merged_res\\release\\drawable\\notification_icon_background.xml",
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-3\\51a4d184cd6599afdadd7a31dda0ee15\\transformed\\core-1.6.0\\res\\drawable\\notification_icon_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lenovo\\Downloads\\MergedVersion-main (2)\\MergedVersion-main\\Noorak\\build\\flutter_native_splash\\intermediates\\merged_res\\release\\drawable\\notification_bg_low.xml",
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-3\\51a4d184cd6599afdadd7a31dda0ee15\\transformed\\core-1.6.0\\res\\drawable\\notification_bg_low.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lenovo\\Downloads\\MergedVersion-main (2)\\MergedVersion-main\\Noorak\\build\\flutter_native_splash\\intermediates\\merged_res\\release\\drawable\\notification_tile_bg.xml",
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-3\\51a4d184cd6599afdadd7a31dda0ee15\\transformed\\core-1.6.0\\res\\drawable\\notification_tile_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lenovo\\Downloads\\MergedVersion-main (2)\\MergedVersion-main\\Noorak\\build\\flutter_native_splash\\intermediates\\merged_res\\release\\drawable\\notification_bg.xml",
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-3\\51a4d184cd6599afdadd7a31dda0ee15\\transformed\\core-1.6.0\\res\\drawable\\notification_bg.xml"
+    }
+]

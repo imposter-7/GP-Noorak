@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "C:\\Users\\Lenovo\\Downloads\\MergedVersion-main (2)\\MergedVersion-main\\Noorak\\build\\flutter_native_splash\\intermediates\\merged_res\\release\\drawable-hdpi-v4\\notify_panel_notification_icon_bg.png",
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-3\\51a4d184cd6599afdadd7a31dda0ee15\\transformed\\core-1.6.0\\res\\drawable-hdpi-v4\\notify_panel_notification_icon_bg.png"
+    },
+    {
+        "merged": "C:\\Users\\Lenovo\\Downloads\\MergedVersion-main (2)\\MergedVersion-main\\Noorak\\build\\flutter_native_splash\\intermediates\\merged_res\\release\\drawable-hdpi-v4\\notification_bg_low_pressed.9.png",
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-3\\51a4d184cd6599afdadd7a31dda0ee15\\transformed\\core-1.6.0\\res\\drawable-hdpi-v4\\notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Lenovo\\Downloads\\MergedVersion-main (2)\\MergedVersion-main\\Noorak\\build\\flutter_native_splash\\intermediates\\merged_res\\release\\drawable-hdpi-v4\\notification_bg_low_normal.9.png",
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-3\\51a4d184cd6599afdadd7a31dda0ee15\\transformed\\core-1.6.0\\res\\drawable-hdpi-v4\\notification_bg_low_normal.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Lenovo\\Downloads\\MergedVersion-main (2)\\MergedVersion-main\\Noorak\\build\\flutter_native_splash\\intermediates\\merged_res\\release\\drawable-hdpi-v4\\notification_bg_normal_pressed.9.png",
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-3\\51a4d184cd6599afdadd7a31dda0ee15\\transformed\\core-1.6.0\\res\\drawable-hdpi-v4\\notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Lenovo\\Downloads\\MergedVersion-main (2)\\MergedVersion-main\\Noorak\\build\\flutter_native_splash\\intermediates\\merged_res\\release\\drawable-hdpi-v4\\notification_bg_normal.9.png",
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-3\\51a4d184cd6599afdadd7a31dda0ee15\\transformed\\core-1.6.0\\res\\drawable-hdpi-v4\\notification_bg_normal.9.png"
+    }
+]

@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\Lenovo\\Downloads\\MergedVersion-main (2)\\MergedVersion-main\\Noorak\\build\\flutter_native_splash\\intermediates\\merged_res\\release\\layout-v21\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-3\\51a4d184cd6599afdadd7a31dda0ee15\\transformed\\core-1.6.0\\res\\layout-v21\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lenovo\\Downloads\\MergedVersion-main (2)\\MergedVersion-main\\Noorak\\build\\flutter_native_splash\\intermediates\\merged_res\\release\\layout-v21\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-3\\51a4d184cd6599afdadd7a31dda0ee15\\transformed\\core-1.6.0\\res\\layout-v21\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lenovo\\Downloads\\MergedVersion-main (2)\\MergedVersion-main\\Noorak\\build\\flutter_native_splash\\intermediates\\merged_res\\release\\layout-v21\\notification_action.xml",
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-3\\51a4d184cd6599afdadd7a31dda0ee15\\transformed\\core-1.6.0\\res\\layout-v21\\notification_action.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lenovo\\Downloads\\MergedVersion-main (2)\\MergedVersion-main\\Noorak\\build\\flutter_native_splash\\intermediates\\merged_res\\release\\layout-v21\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-3\\51a4d184cd6599afdadd7a31dda0ee15\\transformed\\core-1.6.0\\res\\layout-v21\\notification_template_icon_group.xml"
+    }
+]

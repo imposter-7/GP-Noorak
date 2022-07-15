@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "1088254695389",
+    "firebase_url": "https://homeautomation-6d999-default-rtdb.firebaseio.com",
+    "project_id": "homeautomation-6d999",
+    "storage_bucket": "homeautomation-6d999.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1088254695389:android:d955bf5a8f1af20ccf4834",
+        "android_client_info": {
+          "package_name": "com.company.iot2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1088254695389-c3cef4u94n9u1106q31tm1he7krm8ag3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdVX8FI1CjRuh5Jrrl-iuUSDM1jd9lIzE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1088254695389-c3cef4u94n9u1106q31tm1he7krm8ag3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1088254695389:android:6137e84215c301a6cf4834",
+        "android_client_info": {
+          "package_name": "com.example.flutter_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1088254695389-c3cef4u94n9u1106q31tm1he7krm8ag3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdVX8FI1CjRuh5Jrrl-iuUSDM1jd9lIzE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1088254695389-c3cef4u94n9u1106q31tm1he7krm8ag3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1088254695389:android:6773bba12712ed6bcf4834",
+        "android_client_info": {
+          "package_name": "com.example.lastversion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1088254695389-c3cef4u94n9u1106q31tm1he7krm8ag3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdVX8FI1CjRuh5Jrrl-iuUSDM1jd9lIzE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1088254695389-c3cef4u94n9u1106q31tm1he7krm8ag3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
