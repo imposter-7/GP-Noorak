@@ -1,0 +1,352 @@
+{
+    "language": "English",
+    "@language":{
+      "description": "The current Language"
+    },
+    "register": "Register",
+    "@register": {
+"description": "A programmer greeting"
+    },
+    "signin": "Sign in",
+    "@signin" :{
+        "description": "A programmer greeting"
+
+    },
+    "signemail" : "Sign in with Email",
+    "@signemail" :{
+        "description": "A programmer greeting"
+
+    },
+    "google" : "Google",
+    "@google" :{
+        "description": "A programmer greeting"
+
+    },
+"appleid" : "AppleID",
+    "@appelid" :{
+        "description": "A programmer greeting"
+
+    },
+    "control" : "Control from",
+    "@control":
+    {
+        "description": "A programmer greeting"
+
+    },
+    "anywhere" : "anywhere",
+    "@anywhere" : 
+    {
+        "description": "A programmer greeting"
+
+    },
+    "by" : "By continuing you agree to terms and conditions",
+    "@by" : {
+        "description": "A programmer greeting"
+
+    },
+    "welcome": "Welcome !",
+    "@welcome" : {
+        "description": "A programmer greeting"
+    },
+    "signincontrol" : "Sign in to control your lights",
+    "@signincontrol" : {
+        "description": "A programmer greeting"
+    },
+    "email" : "Email",
+    "@email" : {
+        "description": "A programmer greeting"
+    },
+    "pass" : "Password" ,
+    "@pass" : {
+        "description": "A programmer greeting"
+    },
+    "forget" : "Forgot password ? ",
+    "@forget" : {
+        "description": "A programmer greeting"
+    },
+    "donthave" : "Don't have account ?",
+    "@donthave" : {
+        "description": "A programmer greeting"
+    },
+    "signupcontrol" : "Sign up to control your lights" ,
+    "@signupcontrol" : {
+        "description": "A programmer greeting"
+
+    },
+    "confirmpass" : "Confirm Password" , 
+    "@confirmpass" : {
+        "description": "A programmer greeting"
+
+    },
+    "haveacc" : "Already have account ?" ,
+    "@haveacc" : {
+        "description": "A programmer greeting"
+
+    },
+    "invalidpass" : "Invalid password " , 
+    "@invalidpass" : {
+        "description": "A programmer greeting"
+
+    },
+
+"entercorrect" : "Enter correct email",
+"@entercorrect" :{
+    "description": "A programmer greeting"
+
+},
+"passrequir" : "Password is required",
+"@passrequir" : {
+    "description": "A programmer greeting"
+
+},
+
+"erequir" : "Email is required" , 
+"@erequir" : {
+    "description": "A programmer greeting"
+
+},
+"noroomsyet" : "No rooms yet ... ",
+"@noroomsyet" : {
+    "description": "A programmer greeting"
+
+},
+"myhome" : "Home " , 
+"@myhome" : {
+    "description": "A programmer greeting"
+
+},
+"smart" : "Smart",
+"@smart" : {
+    "description": "A programmer greeting"
+
+},
+"profile" : "Profile" ,
+"@profile" : {
+    "description": "A programmer greeting"
+
+},
+"auto" : "Automation " ,
+"@auto" : {
+    "description": "A programmer greeting"
+
+},
+"spoweron" : "Scheduled Power-On ",
+"@spoweron" : {
+    "description": "A programmer greeting"
+},
+"spoweroff" : "Scheduled Power-off ",
+"@spoweroff" : {
+    "description": "A programmer greeting"
+},
+"snotify" : "Scheduled Notifications " ,
+"@snotify" : {
+    "description": "A programmer greeting"
+},
+"sunrise" : "Turn off the switch at sunrise " , 
+"@sunrise" : {
+    "description": "A programmer greeting"
+},
+
+"sunset"  : " Turn on the switch at sunset " ,
+"@sunset" : {
+    "description": "A programmer greeting"
+
+},
+"notify" : "Notifications " ,
+"@notify" : {
+    "description": "A programmer greeting"
+
+},
+"location" : "Location" ,
+"@location" : {
+    "description": "A programmer greeting"
+
+},
+"turnnotify" : "Turn-on notifications",
+"@turnnotify" :
+{
+    "description": "A programmer greeting"
+
+},
+"setloc" : "Set your location" , 
+"@setloc" : {
+    "description": "A programmer greeting"
+
+},
+"report" : "Report",
+"@report" :{    "description": "A programmer greeting"
+},
+"checkre" : "Check your report" ,
+"@checkre" : {
+    "description": "A programmer greeting"
+
+},
+"passvalid" : "Password must be atleast 8 characters ",
+"@passvalid" : {
+    "description": "A programmer greeting"
+
+},
+"passmatch"  : "Passwords need to match ",
+"@passmatch" : {
+    "description": "A programmer greeting"
+
+},
+"logout" : "Logout",
+"@logout" : {
+    "description": "A programmer greeting"
+
+},
+"autodetails" : "Autmoation Details",
+"@autodetails" : {
+    "description": "A programmer greeting"
+
+},
+"manual" : "Manual Control",
+"@manual" : {
+    "description": "A programmer greeting"
+
+},
+
+"enteralias" : "Enater your light alias",
+"@enteralias" : {
+    "description": "A programmer greeting"
+
+},
+
+"submit" : "Submit",
+"@submit" : {
+    "description": "A programmer greeting"
+
+},
+
+"editlight" : "Edit light name",
+"@editlight" : {
+    "description": "A programmer greeting"
+
+},
+
+"newname" : "Enter new light name",
+"@newname" : {
+    "description": "A programmer greeting"
+
+},
+
+"light" : "Light",
+"@light" : {
+    "description": "A programmer greeting"
+
+},
+
+"nolight" : "No light yet ...",
+"@nolight" : {
+    "description": "A programmer greeting"
+
+},
+"pick" : "Pick a time",
+"@pick" : {
+    "description": "A programmer greeting"
+
+},
+"added" : "Feature is added successfully!",
+"@added" : {
+    "description": "A programmer greeting"
+
+},
+"ok" : "Ok",
+"@ok" : {
+    "description": "A programmer greeting"
+},
+"poweroff" :  "Power-off",
+"@poweroff" : {
+    "description": "A programmer greeting"
+},
+"offat" : "Power-off at:",
+"@offat" : {
+    "description": "A programmer greeting"
+
+},
+"selectnum" : "Select one room or more :",
+"@selectnum" : {
+    "description": "A programmer greeting"
+},
+"set" : "Set" ,
+"@set" : {
+    "description": "A programmer greeting"
+
+},
+"poweron" : "Power-on",
+"@poweron" : {
+    "description": "A programmer greeting"
+},
+"onat" : "Power-on at :",
+"@onat" : { 
+       "description": "A programmer greeting"
+},
+"notifyaftr" : "Notify me after:",
+"@notifyaftr" : {
+    "description": "A programmer greeting"
+
+},
+"snotify" : "scheduled-notifications",
+"@snotify" : {
+    "description": "A programmer greeting"
+
+},
+"sunrisesm" : "Sunrise",
+"@sunrisesm" : {
+    "description": "A programmer greeting"
+
+},
+"switchsunrise" : "Switch off lights at sunrise",
+"@switchsunrise" : {
+    "description": "A programmer greeting"
+
+},
+"suriseat" : "Sunrise is at :  5:35 am",
+"@suriseat" : {
+    "description": "A programmer greeting"
+
+},
+
+"switchsunset" : "Switch on lights at sunset",
+"@switchsunset" : {
+    "description": "A programmer greeting"
+},
+"sunsetat" : "Sunset is at :  7:46 pm",
+"@sunsetat" : {
+    "description": "A programmer greeting"
+},
+"sunsetsm" : "Sunset",
+"@sunsetsm" : {
+    "description": "A programmer greeting"
+},
+"newlight" : "New Light",
+"@newlight" : {
+    "description": "A programmer greeting"
+
+},
+"error" : "Error" ,
+"@error" : {
+    "description": "A programmer greeting"
+},
+"autode" : "Automation Details",
+"@autode" : {
+    "description": "A programmer greeting"
+
+},
+"noauto" : "No automation details yet..",
+"@noauto" :{
+    "description": "A programmer greeting"
+
+},
+"resetpass" : "Reset Password",
+
+"@resetpass" : {
+    "description": "A programmer greeting"
+
+}
+
+
+
+
+}

@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "C:\\Users\\Lenovo\\Downloads\\MergedVersion-main (2)\\MergedVersion-main\\Noorak\\build\\firebase_core\\intermediates\\merged_res\\release\\layout\\notification_template_part_chronometer.xml",
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-3\\51a4d184cd6599afdadd7a31dda0ee15\\transformed\\core-1.6.0\\res\\layout\\notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lenovo\\Downloads\\MergedVersion-main (2)\\MergedVersion-main\\Noorak\\build\\firebase_core\\intermediates\\merged_res\\release\\layout\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-3\\51a4d184cd6599afdadd7a31dda0ee15\\transformed\\core-1.6.0\\res\\layout\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lenovo\\Downloads\\MergedVersion-main (2)\\MergedVersion-main\\Noorak\\build\\firebase_core\\intermediates\\merged_res\\release\\layout\\notification_action.xml",
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-3\\51a4d184cd6599afdadd7a31dda0ee15\\transformed\\core-1.6.0\\res\\layout\\notification_action.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lenovo\\Downloads\\MergedVersion-main (2)\\MergedVersion-main\\Noorak\\build\\firebase_core\\intermediates\\merged_res\\release\\layout\\custom_dialog.xml",
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-3\\51a4d184cd6599afdadd7a31dda0ee15\\transformed\\core-1.6.0\\res\\layout\\custom_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lenovo\\Downloads\\MergedVersion-main (2)\\MergedVersion-main\\Noorak\\build\\firebase_core\\intermediates\\merged_res\\release\\layout\\notification_template_part_time.xml",
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-3\\51a4d184cd6599afdadd7a31dda0ee15\\transformed\\core-1.6.0\\res\\layout\\notification_template_part_time.xml"
+    },
+    {
+        "merged": "C:\\Users\\Lenovo\\Downloads\\MergedVersion-main (2)\\MergedVersion-main\\Noorak\\build\\firebase_core\\intermediates\\merged_res\\release\\layout\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-3\\51a4d184cd6599afdadd7a31dda0ee15\\transformed\\core-1.6.0\\res\\layout\\notification_action_tombstone.xml"
+    }
+]

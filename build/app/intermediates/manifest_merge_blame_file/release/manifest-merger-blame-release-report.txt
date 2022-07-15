@@ -1,0 +1,276 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.lastversion"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+8-->C:\Users\Lenovo\Downloads\MergedVersion-main (2)\MergedVersion-main\Noorak\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="31" />
+9-->C:\Users\Lenovo\Downloads\MergedVersion-main (2)\MergedVersion-main\Noorak\android\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+11-->[:flutter_local_notifications] C:\Users\Lenovo\Downloads\MergedVersion-main (2)\MergedVersion-main\Noorak\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:9:5-81
+11-->[:flutter_local_notifications] C:\Users\Lenovo\Downloads\MergedVersion-main (2)\MergedVersion-main\Noorak\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:9:22-78
+12    <uses-permission android:name="android.permission.VIBRATE" />
+12-->[:flutter_local_notifications] C:\Users\Lenovo\Downloads\MergedVersion-main (2)\MergedVersion-main\Noorak\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:10:5-66
+12-->[:flutter_local_notifications] C:\Users\Lenovo\Downloads\MergedVersion-main (2)\MergedVersion-main\Noorak\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:10:22-63
+13    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+13-->[:flutter_local_notifications] C:\Users\Lenovo\Downloads\MergedVersion-main (2)\MergedVersion-main\Noorak\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:11:5-81
+13-->[:flutter_local_notifications] C:\Users\Lenovo\Downloads\MergedVersion-main (2)\MergedVersion-main\Noorak\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:11:22-78
+14    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+14-->[:flutter_local_notifications] C:\Users\Lenovo\Downloads\MergedVersion-main (2)\MergedVersion-main\Noorak\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:12:5-79
+14-->[:flutter_local_notifications] C:\Users\Lenovo\Downloads\MergedVersion-main (2)\MergedVersion-main\Noorak\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:12:22-76
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\Lenovo\.gradle\caches\transforms-3\0d3411bee5c997f3eb2756721427d2bf\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:23:5-67
+15-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\Lenovo\.gradle\caches\transforms-3\0d3411bee5c997f3eb2756721427d2bf\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:23:22-64
+16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+16-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\Lenovo\.gradle\caches\transforms-3\0d3411bee5c997f3eb2756721427d2bf\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:24:5-79
+16-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\Lenovo\.gradle\caches\transforms-3\0d3411bee5c997f3eb2756721427d2bf\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:24:22-76
+17
+18    <application
+19        android:name="android.app.Application"
+19-->C:\Users\Lenovo\Downloads\MergedVersion-main (2)\MergedVersion-main\Noorak\android\app\src\main\AndroidManifest.xml:5:9-42
+20        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+20-->[androidx.core:core:1.6.0] C:\Users\Lenovo\.gradle\caches\transforms-3\51a4d184cd6599afdadd7a31dda0ee15\transformed\core-1.6.0\AndroidManifest.xml:24:18-86
+21        android:icon="@mipmap/ic_launcher"
+21-->C:\Users\Lenovo\Downloads\MergedVersion-main (2)\MergedVersion-main\Noorak\android\app\src\main\AndroidManifest.xml:6:9-43
+22        android:label="lastversion" >
+22-->C:\Users\Lenovo\Downloads\MergedVersion-main (2)\MergedVersion-main\Noorak\android\app\src\main\AndroidManifest.xml:4:9-36
+23        <activity
+23-->C:\Users\Lenovo\Downloads\MergedVersion-main (2)\MergedVersion-main\Noorak\android\app\src\main\AndroidManifest.xml:7:9-27:20
+24            android:name="com.example.lastversion.MainActivity"
+24-->C:\Users\Lenovo\Downloads\MergedVersion-main (2)\MergedVersion-main\Noorak\android\app\src\main\AndroidManifest.xml:8:13-41
+25            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+25-->C:\Users\Lenovo\Downloads\MergedVersion-main (2)\MergedVersion-main\Noorak\android\app\src\main\AndroidManifest.xml:12:13-163
+26            android:exported="true"
+26-->C:\Users\Lenovo\Downloads\MergedVersion-main (2)\MergedVersion-main\Noorak\android\app\src\main\AndroidManifest.xml:9:13-36
+27            android:hardwareAccelerated="true"
+27-->C:\Users\Lenovo\Downloads\MergedVersion-main (2)\MergedVersion-main\Noorak\android\app\src\main\AndroidManifest.xml:13:13-47
+28            android:launchMode="singleTop"
+28-->C:\Users\Lenovo\Downloads\MergedVersion-main (2)\MergedVersion-main\Noorak\android\app\src\main\AndroidManifest.xml:10:13-43
+29            android:theme="@style/LaunchTheme"
+29-->C:\Users\Lenovo\Downloads\MergedVersion-main (2)\MergedVersion-main\Noorak\android\app\src\main\AndroidManifest.xml:11:13-47
+30            android:windowSoftInputMode="adjustResize" >
+30-->C:\Users\Lenovo\Downloads\MergedVersion-main (2)\MergedVersion-main\Noorak\android\app\src\main\AndroidManifest.xml:14:13-55
+31
+32            <!--
+33                 Specifies an Android theme to apply to this Activity as soon as
+34                 the Android process has started. This theme is visible to the user
+35                 while the Flutter UI initializes. After that, this theme continues
+36                 to determine the Window background behind the Flutter UI.
+37            -->
+38            <meta-data
+38-->C:\Users\Lenovo\Downloads\MergedVersion-main (2)\MergedVersion-main\Noorak\android\app\src\main\AndroidManifest.xml:19:13-22:17
+39                android:name="io.flutter.embedding.android.NormalTheme"
+39-->C:\Users\Lenovo\Downloads\MergedVersion-main (2)\MergedVersion-main\Noorak\android\app\src\main\AndroidManifest.xml:20:15-70
+40                android:resource="@style/NormalTheme" />
+40-->C:\Users\Lenovo\Downloads\MergedVersion-main (2)\MergedVersion-main\Noorak\android\app\src\main\AndroidManifest.xml:21:15-52
+41
+42            <intent-filter>
+42-->C:\Users\Lenovo\Downloads\MergedVersion-main (2)\MergedVersion-main\Noorak\android\app\src\main\AndroidManifest.xml:23:13-26:29
+43                <action android:name="android.intent.action.MAIN" />
+43-->C:\Users\Lenovo\Downloads\MergedVersion-main (2)\MergedVersion-main\Noorak\android\app\src\main\AndroidManifest.xml:24:17-68
+43-->C:\Users\Lenovo\Downloads\MergedVersion-main (2)\MergedVersion-main\Noorak\android\app\src\main\AndroidManifest.xml:24:25-66
+44
+45                <category android:name="android.intent.category.LAUNCHER" />
+45-->C:\Users\Lenovo\Downloads\MergedVersion-main (2)\MergedVersion-main\Noorak\android\app\src\main\AndroidManifest.xml:25:17-76
+45-->C:\Users\Lenovo\Downloads\MergedVersion-main (2)\MergedVersion-main\Noorak\android\app\src\main\AndroidManifest.xml:25:27-74
+46            </intent-filter>
+47        </activity>
+48        <!--
+49             Don't delete the meta-data below.
+50             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+51        -->
+52        <meta-data
+52-->C:\Users\Lenovo\Downloads\MergedVersion-main (2)\MergedVersion-main\Noorak\android\app\src\main\AndroidManifest.xml:30:9-32:33
+53            android:name="flutterEmbedding"
+53-->C:\Users\Lenovo\Downloads\MergedVersion-main (2)\MergedVersion-main\Noorak\android\app\src\main\AndroidManifest.xml:31:13-44
+54            android:value="2" />
+54-->C:\Users\Lenovo\Downloads\MergedVersion-main (2)\MergedVersion-main\Noorak\android\app\src\main\AndroidManifest.xml:32:13-30
+55
+56        <service
+56-->[:firebase_auth] C:\Users\Lenovo\Downloads\MergedVersion-main (2)\MergedVersion-main\Noorak\build\firebase_auth\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-14:19
+57            android:name="com.google.firebase.components.ComponentDiscoveryService"
+57-->[:firebase_auth] C:\Users\Lenovo\Downloads\MergedVersion-main (2)\MergedVersion-main\Noorak\build\firebase_auth\intermediates\merged_manifest\release\AndroidManifest.xml:10:18-89
+58            android:directBootAware="true"
+58-->[com.google.firebase:firebase-common:20.1.1] C:\Users\Lenovo\.gradle\caches\transforms-3\6a4c6d1c6c123dd0fc5c77c2fb3649c5\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:35:13-43
+59            android:exported="false" >
+59-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\Lenovo\.gradle\caches\transforms-3\0d3411bee5c997f3eb2756721427d2bf\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:66:13-37
+60            <meta-data
+60-->[:firebase_auth] C:\Users\Lenovo\Downloads\MergedVersion-main (2)\MergedVersion-main\Noorak\build\firebase_auth\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-13:85
+61                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
+61-->[:firebase_auth] C:\Users\Lenovo\Downloads\MergedVersion-main (2)\MergedVersion-main\Noorak\build\firebase_auth\intermediates\merged_manifest\release\AndroidManifest.xml:12:17-124
+62                android:value="com.google.firebase.components.ComponentRegistrar" />
+62-->[:firebase_auth] C:\Users\Lenovo\Downloads\MergedVersion-main (2)\MergedVersion-main\Noorak\build\firebase_auth\intermediates\merged_manifest\release\AndroidManifest.xml:13:17-82
+63            <meta-data
+63-->[:firebase_database] C:\Users\Lenovo\Downloads\MergedVersion-main (2)\MergedVersion-main\Noorak\build\firebase_database\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-13:85
+64                android:name="com.google.firebase.components:io.flutter.plugins.firebase.database.FlutterFirebaseAppRegistrar"
+64-->[:firebase_database] C:\Users\Lenovo\Downloads\MergedVersion-main (2)\MergedVersion-main\Noorak\build\firebase_database\intermediates\merged_manifest\release\AndroidManifest.xml:12:17-127
+65                android:value="com.google.firebase.components.ComponentRegistrar" />
+65-->[:firebase_database] C:\Users\Lenovo\Downloads\MergedVersion-main (2)\MergedVersion-main\Noorak\build\firebase_database\intermediates\merged_manifest\release\AndroidManifest.xml:13:17-82
+66            <meta-data
+66-->[:firebase_core] C:\Users\Lenovo\Downloads\MergedVersion-main (2)\MergedVersion-main\Noorak\build\firebase_core\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-13:85
+67                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+67-->[:firebase_core] C:\Users\Lenovo\Downloads\MergedVersion-main (2)\MergedVersion-main\Noorak\build\firebase_core\intermediates\merged_manifest\release\AndroidManifest.xml:12:17-124
+68                android:value="com.google.firebase.components.ComponentRegistrar" />
+68-->[:firebase_core] C:\Users\Lenovo\Downloads\MergedVersion-main (2)\MergedVersion-main\Noorak\build\firebase_core\intermediates\merged_manifest\release\AndroidManifest.xml:13:17-82
+69            <meta-data
+69-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\Lenovo\.gradle\caches\transforms-3\0d3411bee5c997f3eb2756721427d2bf\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:67:13-69:85
+70                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+70-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\Lenovo\.gradle\caches\transforms-3\0d3411bee5c997f3eb2756721427d2bf\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:68:17-109
+71                android:value="com.google.firebase.components.ComponentRegistrar" />
+71-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\Lenovo\.gradle\caches\transforms-3\0d3411bee5c997f3eb2756721427d2bf\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:69:17-82
+72            <meta-data
+72-->[com.google.firebase:firebase-database:20.0.5] C:\Users\Lenovo\.gradle\caches\transforms-3\6e031d995a9c3e9796ea2d857a326d8a\transformed\jetified-firebase-database-20.0.5\AndroidManifest.xml:32:13-34:85
+73                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+73-->[com.google.firebase:firebase-database:20.0.5] C:\Users\Lenovo\.gradle\caches\transforms-3\6e031d995a9c3e9796ea2d857a326d8a\transformed\jetified-firebase-database-20.0.5\AndroidManifest.xml:33:17-109
+74                android:value="com.google.firebase.components.ComponentRegistrar" />
+74-->[com.google.firebase:firebase-database:20.0.5] C:\Users\Lenovo\.gradle\caches\transforms-3\6e031d995a9c3e9796ea2d857a326d8a\transformed\jetified-firebase-database-20.0.5\AndroidManifest.xml:34:17-82
+75        </service>
+76
+77        <receiver
+77-->[:flutter_local_notifications] C:\Users\Lenovo\Downloads\MergedVersion-main (2)\MergedVersion-main\Noorak\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:15:9-17:40
+78            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver"
+78-->[:flutter_local_notifications] C:\Users\Lenovo\Downloads\MergedVersion-main (2)\MergedVersion-main\Noorak\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:16:13-97
+79            android:exported="false" />
+79-->[:flutter_local_notifications] C:\Users\Lenovo\Downloads\MergedVersion-main (2)\MergedVersion-main\Noorak\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:17:13-37
+80        <receiver
+80-->[:flutter_local_notifications] C:\Users\Lenovo\Downloads\MergedVersion-main (2)\MergedVersion-main\Noorak\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:18:9-27:20
+81            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver"
+81-->[:flutter_local_notifications] C:\Users\Lenovo\Downloads\MergedVersion-main (2)\MergedVersion-main\Noorak\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:19:13-101
+82            android:exported="false" >
+82-->[:flutter_local_notifications] C:\Users\Lenovo\Downloads\MergedVersion-main (2)\MergedVersion-main\Noorak\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:20:13-37
+83            <intent-filter>
+83-->[:flutter_local_notifications] C:\Users\Lenovo\Downloads\MergedVersion-main (2)\MergedVersion-main\Noorak\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:21:13-26:29
+84                <action android:name="android.intent.action.BOOT_COMPLETED" />
+84-->[:flutter_local_notifications] C:\Users\Lenovo\Downloads\MergedVersion-main (2)\MergedVersion-main\Noorak\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:22:17-79
+84-->[:flutter_local_notifications] C:\Users\Lenovo\Downloads\MergedVersion-main (2)\MergedVersion-main\Noorak\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:22:25-76
+85                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+85-->[:flutter_local_notifications] C:\Users\Lenovo\Downloads\MergedVersion-main (2)\MergedVersion-main\Noorak\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:23:17-84
+85-->[:flutter_local_notifications] C:\Users\Lenovo\Downloads\MergedVersion-main (2)\MergedVersion-main\Noorak\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:23:25-81
+86                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+86-->[:flutter_local_notifications] C:\Users\Lenovo\Downloads\MergedVersion-main (2)\MergedVersion-main\Noorak\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:24:17-82
+86-->[:flutter_local_notifications] C:\Users\Lenovo\Downloads\MergedVersion-main (2)\MergedVersion-main\Noorak\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:24:25-79
+87                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+87-->[:flutter_local_notifications] C:\Users\Lenovo\Downloads\MergedVersion-main (2)\MergedVersion-main\Noorak\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:25:17-82
+87-->[:flutter_local_notifications] C:\Users\Lenovo\Downloads\MergedVersion-main (2)\MergedVersion-main\Noorak\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:25:25-79
+88            </intent-filter>
+89        </receiver>
+90
+91        <uses-library
+91-->[androidx.window:window:1.0.0-beta04] C:\Users\Lenovo\.gradle\caches\transforms-3\65d7f496e0c0fefec8fa7195c7c8a034\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+92            android:name="androidx.window.extensions"
+92-->[androidx.window:window:1.0.0-beta04] C:\Users\Lenovo\.gradle\caches\transforms-3\65d7f496e0c0fefec8fa7195c7c8a034\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+93            android:required="false" />
+93-->[androidx.window:window:1.0.0-beta04] C:\Users\Lenovo\.gradle\caches\transforms-3\65d7f496e0c0fefec8fa7195c7c8a034\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+94        <uses-library
+94-->[androidx.window:window:1.0.0-beta04] C:\Users\Lenovo\.gradle\caches\transforms-3\65d7f496e0c0fefec8fa7195c7c8a034\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+95            android:name="androidx.window.sidecar"
+95-->[androidx.window:window:1.0.0-beta04] C:\Users\Lenovo\.gradle\caches\transforms-3\65d7f496e0c0fefec8fa7195c7c8a034\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+96            android:required="false" />
+96-->[androidx.window:window:1.0.0-beta04] C:\Users\Lenovo\.gradle\caches\transforms-3\65d7f496e0c0fefec8fa7195c7c8a034\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+97
+98        <activity
+98-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\Lenovo\.gradle\caches\transforms-3\0d3411bee5c997f3eb2756721427d2bf\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:27:9-44:20
+99            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+99-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\Lenovo\.gradle\caches\transforms-3\0d3411bee5c997f3eb2756721427d2bf\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:28:13-80
+100            android:excludeFromRecents="true"
+100-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\Lenovo\.gradle\caches\transforms-3\0d3411bee5c997f3eb2756721427d2bf\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:29:13-46
+101            android:exported="true"
+101-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\Lenovo\.gradle\caches\transforms-3\0d3411bee5c997f3eb2756721427d2bf\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:30:13-36
+102            android:launchMode="singleTask"
+102-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\Lenovo\.gradle\caches\transforms-3\0d3411bee5c997f3eb2756721427d2bf\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:31:13-44
+103            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+103-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\Lenovo\.gradle\caches\transforms-3\0d3411bee5c997f3eb2756721427d2bf\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:32:13-72
+104            <intent-filter>
+104-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\Lenovo\.gradle\caches\transforms-3\0d3411bee5c997f3eb2756721427d2bf\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:33:13-43:29
+105                <action android:name="android.intent.action.VIEW" />
+105-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\Lenovo\.gradle\caches\transforms-3\0d3411bee5c997f3eb2756721427d2bf\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:34:17-69
+105-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\Lenovo\.gradle\caches\transforms-3\0d3411bee5c997f3eb2756721427d2bf\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:34:25-66
+106
+107                <category android:name="android.intent.category.DEFAULT" />
+107-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\Lenovo\.gradle\caches\transforms-3\0d3411bee5c997f3eb2756721427d2bf\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:36:17-76
+107-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\Lenovo\.gradle\caches\transforms-3\0d3411bee5c997f3eb2756721427d2bf\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:36:27-73
+108                <category android:name="android.intent.category.BROWSABLE" />
+108-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\Lenovo\.gradle\caches\transforms-3\0d3411bee5c997f3eb2756721427d2bf\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:37:17-78
+108-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\Lenovo\.gradle\caches\transforms-3\0d3411bee5c997f3eb2756721427d2bf\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:37:27-75
+109
+110                <data
+110-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\Lenovo\.gradle\caches\transforms-3\0d3411bee5c997f3eb2756721427d2bf\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:39:17-42:51
+111                    android:host="firebase.auth"
+111-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\Lenovo\.gradle\caches\transforms-3\0d3411bee5c997f3eb2756721427d2bf\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:40:21-49
+112                    android:path="/"
+112-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\Lenovo\.gradle\caches\transforms-3\0d3411bee5c997f3eb2756721427d2bf\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:41:21-37
+113                    android:scheme="genericidp" />
+113-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\Lenovo\.gradle\caches\transforms-3\0d3411bee5c997f3eb2756721427d2bf\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:42:21-48
+114            </intent-filter>
+115        </activity>
+116        <activity
+116-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\Lenovo\.gradle\caches\transforms-3\0d3411bee5c997f3eb2756721427d2bf\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:45:9-62:20
+117            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+117-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\Lenovo\.gradle\caches\transforms-3\0d3411bee5c997f3eb2756721427d2bf\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:46:13-79
+118            android:excludeFromRecents="true"
+118-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\Lenovo\.gradle\caches\transforms-3\0d3411bee5c997f3eb2756721427d2bf\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:47:13-46
+119            android:exported="true"
+119-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\Lenovo\.gradle\caches\transforms-3\0d3411bee5c997f3eb2756721427d2bf\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:48:13-36
+120            android:launchMode="singleTask"
+120-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\Lenovo\.gradle\caches\transforms-3\0d3411bee5c997f3eb2756721427d2bf\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:49:13-44
+121            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+121-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\Lenovo\.gradle\caches\transforms-3\0d3411bee5c997f3eb2756721427d2bf\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:50:13-72
+122            <intent-filter>
+122-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\Lenovo\.gradle\caches\transforms-3\0d3411bee5c997f3eb2756721427d2bf\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:51:13-61:29
+123                <action android:name="android.intent.action.VIEW" />
+123-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\Lenovo\.gradle\caches\transforms-3\0d3411bee5c997f3eb2756721427d2bf\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:34:17-69
+123-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\Lenovo\.gradle\caches\transforms-3\0d3411bee5c997f3eb2756721427d2bf\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:34:25-66
+124
+125                <category android:name="android.intent.category.DEFAULT" />
+125-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\Lenovo\.gradle\caches\transforms-3\0d3411bee5c997f3eb2756721427d2bf\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:36:17-76
+125-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\Lenovo\.gradle\caches\transforms-3\0d3411bee5c997f3eb2756721427d2bf\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:36:27-73
+126                <category android:name="android.intent.category.BROWSABLE" />
+126-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\Lenovo\.gradle\caches\transforms-3\0d3411bee5c997f3eb2756721427d2bf\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:37:17-78
+126-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\Lenovo\.gradle\caches\transforms-3\0d3411bee5c997f3eb2756721427d2bf\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:37:27-75
+127
+128                <data
+128-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\Lenovo\.gradle\caches\transforms-3\0d3411bee5c997f3eb2756721427d2bf\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:39:17-42:51
+129                    android:host="firebase.auth"
+129-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\Lenovo\.gradle\caches\transforms-3\0d3411bee5c997f3eb2756721427d2bf\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:40:21-49
+130                    android:path="/"
+130-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\Lenovo\.gradle\caches\transforms-3\0d3411bee5c997f3eb2756721427d2bf\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:41:21-37
+131                    android:scheme="recaptcha" />
+131-->[com.google.firebase:firebase-auth:21.0.5] C:\Users\Lenovo\.gradle\caches\transforms-3\0d3411bee5c997f3eb2756721427d2bf\transformed\jetified-firebase-auth-21.0.5\AndroidManifest.xml:42:21-48
+132            </intent-filter>
+133        </activity>
+134
+135        <provider
+135-->[com.google.firebase:firebase-common:20.1.1] C:\Users\Lenovo\.gradle\caches\transforms-3\6a4c6d1c6c123dd0fc5c77c2fb3649c5\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:26:9-31:39
+136            android:name="com.google.firebase.provider.FirebaseInitProvider"
+136-->[com.google.firebase:firebase-common:20.1.1] C:\Users\Lenovo\.gradle\caches\transforms-3\6a4c6d1c6c123dd0fc5c77c2fb3649c5\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:27:13-77
+137            android:authorities="com.example.lastversion.firebaseinitprovider"
+137-->[com.google.firebase:firebase-common:20.1.1] C:\Users\Lenovo\.gradle\caches\transforms-3\6a4c6d1c6c123dd0fc5c77c2fb3649c5\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:28:13-72
+138            android:directBootAware="true"
+138-->[com.google.firebase:firebase-common:20.1.1] C:\Users\Lenovo\.gradle\caches\transforms-3\6a4c6d1c6c123dd0fc5c77c2fb3649c5\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:29:13-43
+139            android:exported="false"
+139-->[com.google.firebase:firebase-common:20.1.1] C:\Users\Lenovo\.gradle\caches\transforms-3\6a4c6d1c6c123dd0fc5c77c2fb3649c5\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:30:13-37
+140            android:initOrder="100" />
+140-->[com.google.firebase:firebase-common:20.1.1] C:\Users\Lenovo\.gradle\caches\transforms-3\6a4c6d1c6c123dd0fc5c77c2fb3649c5\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:31:13-36
+141
+142        <activity
+142-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Lenovo\.gradle\caches\transforms-3\c13d9e5ecb09d9c19ab8309c72c4c353\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+143            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+143-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Lenovo\.gradle\caches\transforms-3\c13d9e5ecb09d9c19ab8309c72c4c353\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+144            android:exported="false"
+144-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Lenovo\.gradle\caches\transforms-3\c13d9e5ecb09d9c19ab8309c72c4c353\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+145            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+145-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Lenovo\.gradle\caches\transforms-3\c13d9e5ecb09d9c19ab8309c72c4c353\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+146
+147        <meta-data
+147-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\Lenovo\.gradle\caches\transforms-3\fc0b42180d6cfa4088f876f2de646fba\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+148            android:name="com.google.android.gms.version"
+148-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\Lenovo\.gradle\caches\transforms-3\fc0b42180d6cfa4088f876f2de646fba\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
+149            android:value="@integer/google_play_services_version" />
+149-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\Lenovo\.gradle\caches\transforms-3\fc0b42180d6cfa4088f876f2de646fba\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
+150    </application>
+151
+152</manifest>

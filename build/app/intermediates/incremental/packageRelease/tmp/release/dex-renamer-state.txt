@@ -1,0 +1,4 @@
+#Thu Jul 14 02:28:18 EEST 2022
+base.0=C\:\\Users\\Lenovo\\Downloads\\MergedVersion-main (2)\\MergedVersion-main\\Noorak\\build\\app\\intermediates\\dex\\release\\minifyReleaseWithR8\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
