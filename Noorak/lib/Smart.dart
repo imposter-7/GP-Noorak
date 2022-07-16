@@ -134,8 +134,8 @@ class _SmartPageState extends State<SmartPage> {
                               //  BoxShadow()
                           ],
                           gradient: LinearGradient(colors: [
-                            Color.fromARGB(162, 243, 168, 247),
-                            Color.fromARGB(255, 99, 4, 116),
+                            Color.fromARGB(162, 118, 83, 247),
+                            Color.fromARGB(255, 201, 121, 231),
                             
                           ],
                           begin: Alignment.centerRight,
@@ -288,8 +288,8 @@ class _SmartPageState extends State<SmartPage> {
                               //  BoxShadow()
                           ],
                           gradient: LinearGradient(colors: [
-                            Color.fromARGB(218, 140, 218, 178),
-                            Color.fromARGB(160, 0, 136, 25),
+                            Color.fromARGB(218, 108, 218, 173),
+                            Color.fromARGB(220, 95, 100, 178),
                           ],
                           begin: Alignment.centerRight,
                           end: Alignment.centerLeft
@@ -366,8 +366,8 @@ class _SmartPageState extends State<SmartPage> {
                               //  BoxShadow()
                           ],
                           gradient: LinearGradient(colors: [
-                            Color.fromARGB(255, 233, 178, 129),
-                            Color.fromARGB(214, 187, 128, 0),
+                            Color.fromARGB(255, 254, 101, 191),
+                            Color.fromARGB(214, 232, 216, 87),
                           ],
                           begin: Alignment.centerRight,
                           end: Alignment.centerLeft
@@ -456,8 +456,8 @@ class _SmartPageState extends State<SmartPage> {
                               //  BoxShadow()
                           ],
                           gradient: LinearGradient(colors: [
-                            Color.fromARGB(255, 218, 210, 219),
-                            Color.fromARGB(232, 133, 133, 133),
+                            Color.fromARGB(255, 129, 229, 183),
+                            Color.fromARGB(255, 194, 93, 231),
                           ],
                           begin: Alignment.centerRight,
                           end: Alignment.centerLeft
