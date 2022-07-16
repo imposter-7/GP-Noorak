@@ -31,6 +31,7 @@ class _SmartPageState extends State<SmartPage> {
         
         backgroundColor: Colors.black,
         appBar: AppBar(
+          toolbarHeight: 100,
           title: 
           Text(
             AppLocalizations.of(context)!.smart,

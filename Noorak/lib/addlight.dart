@@ -1,6 +1,5 @@
 // ignore_for_file: prefer_const_constructors
 
-import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 import 'package:lastversion/main.dart';
 import "package:flutter_gen/gen_l10n/app_localizations.dart";
@@ -48,19 +47,26 @@ class _AddLight extends State<AddLight> {
     builder: (context)=> AlertDialog(
       title: Text("New Light"),
       content: Column(
+        mainAxisSize: MainAxisSize.min,
         children: [
           TextField(
             autofocus: true,
             decoration: InputDecoration(hintText: AppLocalizations.of(context)!.enteralias ),
             controller: controller,
           ),
-        DropdownButtonFormField<int>(items: List.generate(reservedPins.length, (index) => DropdownMenuItem(child: Text(reservedPins.keys.toList()[index]), value: int.parse(reservedPins.keys.toList()[index].split('p').last))),
+        DropdownButtonFormField<int>(
+          hint: Text("Select the PIN"),
+          // onTap: () => FocusScope.of(context).requestFocus(),
+          items: List.generate(reservedPins.length, (index) => DropdownMenuItem(child: Text(reservedPins.keys.toList()[index]), value: int.parse(reservedPins.keys.toList()[index].split('p').last))),
          onChanged: (value) => dropDown = value)
         ],
       ),
       
 
       actions: [
+        TextButton(
+          onPressed: () => Navigator.of(context).pop(),
+          child: Text("Cancel")),
         TextButton(
           onPressed: () async{
                         // ignore: unnecessary_null_comparison
@@ -98,7 +104,7 @@ class _AddLight extends State<AddLight> {
       actions: [
         TextButton(
           onPressed: () async {
-              if(controller.text == null || controller.text.isEmpty) return;
+              if(controller.text.isEmpty) return;
               await apiServices.editLightAlias(widget.roomID, lightID, controller.text);
 
               Navigator.of(context).pop();
@@ -242,7 +248,9 @@ class _AddLight extends State<AddLight> {
                           
                 child:
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [ 
+                    
                     Padding(padding: EdgeInsets.only(top: 140),
                    child: IconButton(
                   onPressed:(){
@@ -260,7 +268,7 @@ class _AddLight extends State<AddLight> {
              
                 
                 
-           Padding(padding: EdgeInsets.only(top: 140,left:85),
+           Padding(padding: EdgeInsets.only(top: 140),
               child:IconButton(
                   onPressed:()async=>
                   // print(lightKeys[index]),
