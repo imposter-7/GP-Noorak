@@ -257,7 +257,7 @@ class _Profile extends State<Profile> {
       ),
       body: SingleChildScrollView(
         child: SizedBox(
-          height: MediaQuery.of(context).size.height*1.11,
+          height: MediaQuery.of(context).size.height*1.1,
           child:
            Container(
             padding: EdgeInsets.symmetric(horizontal: 20),

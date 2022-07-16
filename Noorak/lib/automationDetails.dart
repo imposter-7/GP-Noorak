@@ -61,19 +61,21 @@ class _AutoDetails extends State<AutoDetails> {
           final List keys = data.keys.toList();
          
           if(keys.contains("power-on")){
-             detailsData["Power-on"] = data[keys[keys.indexOf('power-on')]].toString();
+             detailsData["Power-on at "] = data[keys[keys.indexOf('power-on')]].toString();
           }
           if(keys.contains("power-off")){
-             detailsData["Power-off"] = data[keys[keys.indexOf('power-off')]].toString();
+             detailsData["Power-off at "] = data[keys[keys.indexOf('power-off')]].toString();
           }
           if(keys.contains("scheduled-notifications")){
-             detailsData["Scheduled-notifications"] = data[keys[keys.indexOf('scheduled-notifications')]].toString();
+             detailsData["Get notifications after "] = data[keys[keys.indexOf('scheduled-notifications')]].toString()+"s";
           }
            if(keys.contains("sunrise")){
-             detailsData["Sunrise"] = data[keys[keys.indexOf('sunrise')]].toString();
+             detailsData["Sunrise is "] = "set";
+            //  data[keys[keys.indexOf('sunrise')]].toString();
           }
            if(keys.contains("sunset")){
-             detailsData["Sunset"] = data[keys[keys.indexOf('sunset')]].toString();
+             detailsData["Sunset is "] = "set";
+            //  data[keys[keys.indexOf('sunset')]].toString();
           }
 
             if(detailsData.isEmpty){
@@ -106,8 +108,10 @@ class _AutoDetails extends State<AutoDetails> {
               // crossAxisCount: 1,
                 // detailsKeys[index]+'\n\n'+detailsData[detailsKeys[index]]
                 children: List.generate(detailsKeys.length, (index) =>
-                Flexible(
-                  child: Row(
+                // Flexible(
+                //   child:
+                  
+                   Row(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -148,10 +152,10 @@ class _AutoDetails extends State<AutoDetails> {
                   
                 
                   Text(
-                   detailsKeys[index]+' at '+detailsData[detailsKeys[index]],
+                   detailsKeys[index]+detailsData[detailsKeys[index]],
                     style: TextStyle(
                         color: Colors.white,
-                        fontSize: 20,
+                        fontSize: 18,
                         fontWeight: FontWeight.bold),
                         
                   ),
@@ -160,7 +164,7 @@ class _AutoDetails extends State<AutoDetails> {
                      child:
                       Icon(
                         Icons.edit,
-                        color: Colors.white,
+                        color: Colors.transparent,
 
                       ),
                   )
@@ -197,7 +201,7 @@ class _AutoDetails extends State<AutoDetails> {
           ],
               ),
         ),
-                )
+                // )
               );
         }
         catch(_)
@@ -219,252 +223,7 @@ class _AutoDetails extends State<AutoDetails> {
       
         },
       )
-//        Stack(
-//         children: [
-//           Padding(
-//             padding: EdgeInsets.only(top: 100, left: 50),
-//             child: Container(
-//               height: 100.0,
-//               width: 330.0,
-//               decoration: BoxDecoration(
-//                 borderRadius: BorderRadius.circular(20),
-//                 color: Colors.grey,
-//               ),
-//             ),
-//           ),
-//           Padding(
-//             padding: EdgeInsets.only(top: 110, left: 150),
-//             child: ListView(
-//               children: [
-//                 Text(
-//                   "Scheduled Power-on",
-//                   style: TextStyle(
-//                       color: Colors.white,
-//                       fontSize: 20,
-//                       fontWeight: FontWeight.bold),
-//                 ),
-//                 SizedBox(
-//                   height: 5,
-//                 ),
-//                 Row(
-//                   children: [
-//                     Text('Switch on at 6:00 pm',
-//                         style: TextStyle(
-//                           color: Colors.white,
-//                           fontSize: 17,
-//                         )),
-//                     Icon(
-//                       Icons.edit,
-//                       color: Colors.white,
-//                     ),
-//                   ],
-//                 ),
-//               ],
-//             ),
-//           ),
-//           Padding(
-//             padding: EdgeInsets.only(top: 100, left: 50),
-//             child: Container(
-//               height: 100.0,
-//               width: 70.0,
-//               decoration: BoxDecoration(
-//                 borderRadius: BorderRadius.circular(20),
-//                 color: Color.fromARGB(255, 240, 28, 13),
-//               ),
-//               child: Icon(
-//                 Icons.delete,
-//                 size: 50,
-//                 color: Colors.white,
-//               ),
-//             ),
-//           ),
 
-//           ////////////
-//           ///
-//           ///////////
-//            Padding(
-//             padding: EdgeInsets.only(top: 220, left: 50),
-//             child: Container(
-//               height: 100.0,
-//               width: 330.0,
-//               decoration: BoxDecoration(
-//                 borderRadius: BorderRadius.circular(20),
-//                 color: Colors.grey,
-//               ),
-//             ),
-//           ),
-//           Padding(
-//             padding: EdgeInsets.only(top: 230, left: 150),
-//             child: ListView(
-//               children: [
-//                 Text(
-//                   "Scheduled Power-off",
-//                   style: TextStyle(
-//                       color: Colors.white,
-//                       fontSize: 20,
-//                       fontWeight: FontWeight.bold),
-//                 ),
-//                 SizedBox(
-//                   height: 5,
-//                 ),
-//                 Row(
-//                   children: [
-//                     Text('Switch on at 6:00 pm',
-//                         style: TextStyle(
-//                           color: Colors.white,
-//                           fontSize: 17,
-//                         )),
-//                     Icon(
-//                       Icons.edit,
-//                       color: Colors.white,
-//                     ),
-//                   ],
-//                 ),
-//               ],
-//             ),
-//           ),
-//           Padding(
-//             padding: EdgeInsets.only(top: 220, left: 50),
-//             child: Container(
-//               height: 100.0,
-//               width: 70.0,
-//               decoration: BoxDecoration(
-//                 borderRadius: BorderRadius.circular(20),
-//                 color: Color.fromARGB(255, 240, 28, 13),
-//               ),
-//               child: Icon(
-//                 Icons.delete,
-//                 size: 50,
-//                 color: Colors.white,
-//               ),
-//             ),
-//           ),
-//           ///////////
-//           ///
-//           //////////
-//           ////////
-//           ///
-//         Padding(
-//             padding: EdgeInsets.only(top: 340, left: 50),
-//             child: Container(
-//               height: 100.0,
-//               width: 330.0,
-//               decoration: BoxDecoration(
-//                 borderRadius: BorderRadius.circular(20),
-//                 color: Colors.grey,
-//               ),
-//             ),
-//           ),
-        
-//         Padding(
-//             padding: EdgeInsets.only(top: 350, left: 150),
-//             child: ListView(
-//               children: [
-//                 Text(
-//                   "Scheduled Notifications",
-//                   style: TextStyle(
-//                       color: Colors.white,
-//                       fontSize: 20,
-//                       fontWeight: FontWeight.bold),
-//                 ),
-//                 SizedBox(
-//                   height: 5,
-//                 ),
-//                 Row(
-//                   children: [
-//                     Text('Switch on at 6:00 pm',
-//                         style: TextStyle(
-//                           color: Colors.white,
-//                           fontSize: 17,
-//                         )),
-//                     Icon(
-//                       Icons.edit,
-//                       color: Colors.white,
-//                     ),
-//                   ],
-//                 ),
-//               ],
-//             ),
-//           ),
-//           Padding(
-//             padding: EdgeInsets.only(top: 340, left: 50),
-//             child: Container(
-//               height: 100.0,
-//               width: 70.0,
-//               decoration: BoxDecoration(
-//                 borderRadius: BorderRadius.circular(20),
-//                 color: Color.fromARGB(255, 240, 28, 13),
-//               ),
-//               child: Icon(
-//                 Icons.delete,
-//                 size: 50,
-//                 color: Colors.white,
-//               ),
-//             ),
-//           ),
-//           ////////////////////
-//           ///
-//           /////////////////////
-// Padding(
-//             padding: EdgeInsets.only(top: 460, left: 50),
-//             child: Container(
-//               height: 100.0,
-//               width: 330.0,
-//               decoration: BoxDecoration(
-//                 borderRadius: BorderRadius.circular(20),
-//                 color: Colors.grey,
-//               ),
-//             ),
-//           ),
-        
-//         Padding(
-//             padding: EdgeInsets.only(top: 470, left: 150),
-//             child: ListView(
-//               children: [
-//                 Text(
-//                   "Scheduled Notifications",
-//                   style: TextStyle(
-//                       color: Colors.white,
-//                       fontSize: 20,
-//                       fontWeight: FontWeight.bold),
-//                 ),
-//                 SizedBox(
-//                   height: 5,
-//                 ),
-//                 Row(
-//                   children: [
-//                     Text('Switch on at 6:00 pm',
-//                         style: TextStyle(
-//                           color: Colors.white,
-//                           fontSize: 17,
-//                         )),
-//                     Icon(
-//                       Icons.edit,
-//                       color: Colors.white,
-//                     ),
-//                   ],
-//                 ),
-//               ],
-//             ),
-//           ),
-//           Padding(
-//             padding: EdgeInsets.only(top: 460, left: 50),
-//             child: Container(
-//               height: 100.0,
-//               width: 70.0,
-//               decoration: BoxDecoration(
-//                 borderRadius: BorderRadius.circular(20),
-//                 color: Color.fromARGB(255, 240, 28, 13),
-//               ),
-//               child: Icon(
-//                 Icons.delete,
-//                 size: 50,
-//                 color: Colors.white,
-//               ),
-//             ),
-//           ),
-//         ],
-//       ),
     );
   }
 }
