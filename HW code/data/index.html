@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Configuration</title>
+        <link rel="stylesheet" type="text/css" href='index.css'/>
+      </head>
+    <body>
+        
+         <div class="conf2">
+              <div class="wrapper fadeInDown">
+                <div id="formContent">
+                  <!-- Tabs Titles -->
+                  <h2 class="active"> WiFi Credentials </h2>
+                 <!--  <h2 class="inactive underlineHover">Sign Up </h2> -->
+    
+                  <form action="savewificonfig" method="post">
+                    <input type="text" id="ssid" class="fadeIn second" name="ssid" placeholder="ssid" value="%ssid%" required>
+                    <input type="password" id="password" class="fadeIn third" name="password" placeholder="password" value="%password%">
+                    <input type="submit" class="fadeIn fourth" value="Save">
+                  </form>
+                      <h2 class="active"> Noorak Account </h2>
+             <!--  <h2 class="inactive underlineHover">Sign Up </h2> -->
+
+            <form action="saveapconfig" method="post">
+                <input type="text" id="email" class="fadeIn second" name="email" placeholder="Email" value="%email%" required>
+                <input type="password" id="userPassword" class="fadeIn third" name="userPassword" placeholder="Password" value="%userPassword%">
+                <input type="submit" class="fadeIn fourth" value="Save">
+             </form>
+                    
+                  <form action="restart" method="post">
+                    <input type="submit" class="fadeIn fourth" value="Restart">
+                    <h3 class="restart_required">Note: Restart is required after change the Configurations</h3>
+                  </form>
+              
+                  </div>              
+            </div>
+          </div>
+        
+      <div class="conf1">
+        <div class="wrapper fadeInDown">
+            <div id="formContent">
+              <!-- Tabs Titles -->
+            
+          
+              </div>
+            </div>
+          </div>
+           
+<!--
+        <div class="conf3">
+          <div class="wrapper fadeInDown">
+              <div id="formContent">
+                 Tabs Titles 
+                <h2 class="active"> Mqtt Server Config </h2>
+-->
+               <!--  <h2 class="inactive underlineHover">Sign Up </h2> -->
+  
+<!--
+                <form action="savemqttconfig" method="post">
+                  <input type="text" id="mqttserver" class="fadeIn second" name="mqttserver" placeholder="Server" value="%mqttserver%" required>
+                  <input type="text" id="mqttport" class="fadeIn second" name="mqttport" placeholder="Port" value="%mqttport%" required>
+                  <input type="text" id="mqttusername" class="fadeIn second" name="mqttusername" placeholder="Username" value="%mqttusername%" required>
+                  <input type="password" id="mqttpassword" class="fadeIn third" name="mqttpassword" placeholder="Password" value="%mqttpassword%">
+                  <input type="text" id="mqtttopic" class="fadeIn second" name="mqtttopic" placeholder="Topic" value="%mqtttopic%" required>
+                  <input type="submit" class="fadeIn fourth" value="Save">
+                </form>
+-->
+<!--                </form>            -->
+<!--
+              </div>
+            </div>
+          </div>
+-->
+
+    </body>
+</html>
